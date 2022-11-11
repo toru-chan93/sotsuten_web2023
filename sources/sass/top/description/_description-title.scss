@@ -1,0 +1,19 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.description-title {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  mix-blend-mode: difference;
+  vertical-align: middle;
+
+  &__img {
+    width: 189px;
+  }
+
+  &__sub-img {
+    height: 187px;
+  }
+}

@@ -1,20 +1,21 @@
-@use './variables' as *;
-@use 'sass:math';
+@use "./variables" as *;
+@use "sass:math";
 
 // contentのmargin
-$content-margin: get-vw(76px, 1280px);
+$content-margin-left: get-vw(213px, 1280px);
+$content-margin-right: get-vw(131px, 1280px);
 $content-margin-sp: get-vw(16px, 576px);
 
 // contentの幅
 @mixin content-width {
   box-sizing: border-box;
-  padding-left: $content-margin;
-  padding-right: $content-margin;
+  padding-left: $content-margin-sp;
+  padding-right: $content-margin-sp;
   width: 100%;
 
   @include mq(sm) {
-    padding-left: $content-margin-sp;
-    padding-right: $content-margin-sp;
+    padding-left: $content-margin-left;
+    padding-right: $content-margin-right;
   }
 }
 

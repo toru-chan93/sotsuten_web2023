@@ -1,3 +1,9 @@
 // main
 @use "top/main/main";
 @use "top/top-description";
+
+// description
+@use "top/description/description";
+@use "top/description/description-title";
+@use "top/description/description-col";
+@use "top/description/description-text";

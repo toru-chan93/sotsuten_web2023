@@ -1,0 +1,30 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.description {
+  @include mq(tb) {
+    @include content-width;
+  }
+
+  background-color: $color-hurt;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  mix-blend-mode: difference;
+
+  &__hurt {
+    left: ;
+    position: relative;
+    top: 63px;
+    width: get-vw(504px, 1280px);
+  }
+
+  &__img {
+    mix-blend-mode: difference;
+    width: 100%;
+
+    @include mq(tb) {
+      height: 100%;
+    }
+  }
+}

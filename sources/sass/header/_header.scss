@@ -4,6 +4,7 @@
 .header {
   mix-blend-mode: difference;
   position: fixed;
+  z-index: 10;
   @include mq(tb) {
     margin-left: 32px;
     margin-top: $m-32;
