@@ -81,6 +81,10 @@
   }
 }
 .description__hurt {
+  left: 37.1875vw;
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 789px;
   width: 39.375vw;
 }
 .description__img {
@@ -91,6 +95,16 @@
   .description__img {
     height: 100%;
   }
+}
+
+::-moz-selection {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+::selection {
+  background-color: rgb(255, 0, 0);
+  color: white;
 }
 
 .description-title {

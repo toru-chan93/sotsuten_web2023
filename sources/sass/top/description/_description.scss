@@ -13,9 +13,10 @@
   mix-blend-mode: difference;
 
   &__hurt {
-    left: ;
-    position: relative;
-    top: 63px;
+    left: get-vw(476px, 1280px);
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 789px;
     width: get-vw(504px, 1280px);
   }
 
@@ -27,4 +28,9 @@
       height: 100%;
     }
   }
+}
+
+::selection {
+  background-color: rgb(255 0 0);
+  color: white;
 }
