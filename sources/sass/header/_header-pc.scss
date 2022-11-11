@@ -1,0 +1,39 @@
+@use '../config/import' as *;
+@use 'sass:math';
+
+.header-pc {
+  @include content-width;
+
+  @include mq(tb) {
+    display: flex;
+  }
+
+  @include col(2, $m-48, ".header-pc__contents");
+
+  display: none;
+
+  &__contents {
+    display: flex;
+  }
+
+  &__logo {
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include text-style-body;
+
+    padding-top: $m-16;
+  }
+
+  &__items {
+    @include text-style-body;
+
+    padding-right: $m-16;
+    padding-top: $m-16;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

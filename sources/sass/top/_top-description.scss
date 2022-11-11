@@ -1,0 +1,29 @@
+@use '../config/import' as *;
+@use 'sass:math';
+
+.top-description {
+  width: 100%;
+
+  &__section {
+    @include text-style-section-header;
+
+    padding-top: $m-16;
+  }
+
+  &__contents {
+    @include text-style-body;
+
+    padding-bottom: $m-16;
+    padding-top: $m-16;
+  }
+
+  &__title {
+    @include text-style-section-header;
+  }
+
+  &__body {
+    @include text-style-body;
+
+    padding-top: $m-16;
+  }
+}

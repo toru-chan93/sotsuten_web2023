@@ -1,0 +1,60 @@
+@use 'sass:math';
+
+////////////
+// margin //
+////////////
+
+$m-8: 8px;
+$m-16: 16px;
+$m-24: 24px;
+$m-32: 32px;
+$m-48: 48px;
+$m-64: 64px;
+$m-72: 72px;
+$m-96: 96px;
+
+////////
+// vw //
+////////
+
+@function get-vw($size, $viewport: 1024) {
+  $rate: math.div(100, $viewport);
+
+  @return $rate * $size * 1vw;
+}
+
+// 書き方
+// @include get-vw(要素のピクセル, 画面幅のピクセル);
+
+/////////////////
+// Media Query //
+/////////////////
+
+// 参考
+// https://web-creates.com/code/scss-media-screen/
+
+// breakpointsnの設定
+$mq-breakpoints: (
+  xl: 1440px,
+  lg: 1280px,
+  md: 1024px,
+  tb: 768px,
+  sm: 576px,
+  xs: 414px,
+) !default;
+
+// Media Queryの設定
+@mixin mq($breakpoint: md, $rule: min, $substracution: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 0.0625;
+  }
+
+  @media screen and (#{$rule} - width: $breakpoint) {
+    @content;
+  }
+}
+
+// 書き方
+// @include mq(xl~xsのどれか){};

@@ -1,0 +1,8 @@
+@use '../config/import' as *;
+@use 'sass:math';
+
+.footer {
+  background-color: $color-main;
+  height: $m-72;
+  width: 100%;
+}

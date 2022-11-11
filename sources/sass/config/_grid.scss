@@ -1,0 +1,108 @@
+@use './variables' as *;
+@use 'sass:math';
+
+// contentのmargin
+$content-margin: get-vw(76px, 1280px);
+$content-margin-sp: get-vw(16px, 576px);
+
+// contentの幅
+@mixin content-width {
+  box-sizing: border-box;
+  padding-left: $content-margin;
+  padding-right: $content-margin;
+  width: 100%;
+
+  @include mq(sm) {
+    padding-left: $content-margin-sp;
+    padding-right: $content-margin-sp;
+  }
+}
+
+@mixin reset-content-width {
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+
+  @include mq(sm) {
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+///////////////////
+// Column Layout //
+///////////////////
+
+// 参考
+// https://qiita.com/noqua/items/0dc04aa528269db41a07
+
+// clearfixのmixinを用意
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  zoom: 1;
+}
+
+// こちらがカラム設定用Mixin
+@mixin col(
+  $column-count,
+  $column-margin: margin(),
+  $selector: ".item",
+  $is-list: false,
+  $is-flex: true
+) {
+  // リストに適用する場合
+  @if $is-list == true {
+    $selector: "> li";
+  }
+
+  // is Flex (default)
+  @if $is-flex == true {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    $margin-size: #{$column-margin * ($column-count - 1)};
+
+    #{$selector} {
+      width: calc((100% - #{$margin-size}) / #{$column-count});
+      @content;
+    }
+  }
+
+  // end Flex
+
+  // not Flex
+  @else {
+    @include clearfix;
+
+    margin-left: #{-$column-margin};
+
+    $margin-size: #{$column-margin * $column-count};
+
+    #{$selector} {
+      float: left;
+      margin-left: #{$column-margin};
+      margin-right: -0.1px; // 小数点以下の切り捨て・切り上げ解釈違いに対応
+      width: calc((100% - #{$margin-size}) / #{$column-count});
+      @content;
+    }
+  }
+
+  // end if not Flex
+}
+
+// 書き方
+// @include col(カラム数,margin値 px,'.セレクタ');
+// 例
+// @include col(4,24px,'.item');

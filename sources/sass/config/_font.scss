@@ -1,0 +1,28 @@
+@use './variables' as *;
+@use './colors' as cl;
+@use 'sass:math';
+
+$font-family-default: "游ゴシック", "YuGothic", "游ゴシック体",
+  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+
+// typographyの設定は下記に記述
+// body
+@mixin text-style-body($text-style-important: false) {
+  color: cl.$color-text;
+  font-family: $font-family-default;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+// title
+@mixin text-style-section-header($text-style-important: false) {
+  color: cl.$color-main;
+  font-family: $font-family-default;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+// 書き方
+// @include text-style-body()
