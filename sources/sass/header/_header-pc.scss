@@ -1,11 +1,9 @@
-@use '../config/import' as *;
-@use 'sass:math';
+@use "../config/import" as *;
+@use "sass:math";
 
 .header-pc {
-  @include content-width;
-
   @include mq(tb) {
-    display: flex;
+    display: block;
   }
 
   @include col(2, $m-48, ".header-pc__contents");
@@ -14,6 +12,8 @@
 
   &__contents {
     display: flex;
+    flex-flow: column;
+    margin-bottom: $m-64;
   }
 
   &__logo {
@@ -29,11 +29,22 @@
   &__items {
     @include text-style-body;
 
+    height: 30px;
     padding-right: $m-16;
     padding-top: $m-16;
+    width: fit-content;
+
+    img {
+      height: 30px;
+      width: min-content;
+    }
 
     &:hover {
       cursor: pointer;
     }
   }
+}
+
+body {
+  background-color: $color-white;
 }

@@ -1,8 +1,12 @@
-@use '../config/import' as *;
-@use 'sass:math';
+@use "../config/import" as *;
+@use "sass:math";
 
 .header {
-  background-color: $color-main;
-  height: $m-72;
-  width: 100%;
+  mix-blend-mode: difference;
+  position: fixed;
+  @include mq(tb) {
+    margin-left: 32px;
+    margin-top: $m-32;
+    width: min-content;
+  }
 }
