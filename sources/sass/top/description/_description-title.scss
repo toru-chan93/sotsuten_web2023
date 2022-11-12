@@ -2,18 +2,28 @@
 @use "sass:math";
 
 .description-title {
+  @include mq(tb) {
+    flex-direction: column;
+    vertical-align: middle;
+  }
+
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   mix-blend-mode: difference;
-  vertical-align: middle;
 
   &__img {
     width: 189px;
   }
 
   &__sub-img {
+    @include mq(tb) {
+      margin-top: 0;
+    }
+
     height: 187px;
+    margin-top: -15px;
   }
 }

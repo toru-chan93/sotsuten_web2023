@@ -2,16 +2,17 @@
 @use "sass:math";
 
 .access {
-  @include mq(tb) {
-    @include content-width;
+  @include content-width;
 
+  display: block;
+  height: 100vh;
+  padding-bottom: $m-80;
+  padding-top: $m-80;
+  @include mq(tb) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: $m-48;
     padding-top: $m-48;
   }
-
-  display: block;
-  height: 100vh;
 }

@@ -2,8 +2,10 @@
 @use "sass:math";
 
 .access-text-block {
+  padding-top: $m-48;
   @include mq(tb) {
     display: flex;
     justify-content: space-between;
+    padding-top: 0;
   }
 }

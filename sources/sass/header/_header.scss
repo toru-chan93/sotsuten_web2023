@@ -2,17 +2,13 @@
 @use "sass:math";
 
 .header {
+  margin-left: 23px;
+  margin-top: $m-32;
   mix-blend-mode: difference;
   position: fixed;
   z-index: 10;
   @include mq(tb) {
-    margin-left: 32px;
-    margin-top: $m-32;
+    margin-left: $m-32;
     width: min-content;
   }
-}
-
-body {
-  background-color: $color-white;
-  margin: 0;
 }

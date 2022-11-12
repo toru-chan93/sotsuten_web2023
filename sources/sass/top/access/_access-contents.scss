@@ -5,27 +5,30 @@
   @include mq(tb) {
     display: flex;
     justify-content: space-between;
-
-    &__map {
-      width: calc((100% - 24px) / 11 * 8);
-    }
-
-    &__title {
-      align-items: flex-end;
-      display: flex;
-      flex-direction: column;
-      width: calc((100% - 24px) / 11 * 3);
-    }
   }
 
   &__map {
+    margin-left: get-vw(-32px, 390px);
+    margin-right: get-vw(-32px, 390px);
+    @include mq(tb) {
+      margin: 0;
+      width: calc((100% - 24px) / 11 * 8);
+    }
+
     img {
       width: 100%;
     }
   }
 
   &__title {
+    display: none;
     mix-blend-mode: difference;
+    @include mq(tb) {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      width: calc((100% - 24px) / 11 * 3);
+    }
 
     img {
       width: 32px;

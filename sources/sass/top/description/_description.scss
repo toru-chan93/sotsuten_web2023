@@ -2,22 +2,31 @@
 @use "sass:math";
 
 .description {
+  @include content-width;
   @include mq(tb) {
-    @include content-width;
+    flex-direction: row;
+    justify-content: center;
   }
 
   background-color: $color-hurt;
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-between;
   mix-blend-mode: difference;
 
   &__hurt {
-    left: get-vw(476px, 1280px);
+    @include mq(tb) {
+      left: get-vw(476px, 1280px);
+      top: 789px;
+      width: get-vw(504px, 1280px);
+    }
+
+    left: get-vw(38px, 390px);
     mix-blend-mode: difference;
     position: absolute;
-    top: 789px;
-    width: get-vw(504px, 1280px);
+    top: 1129px;
+    width: get-vw(314px, 390px);
   }
 
   &__img {
@@ -28,9 +37,4 @@
       height: 100%;
     }
   }
-}
-
-::selection {
-  background-color: rgb(255 0 0);
-  color: white;
 }

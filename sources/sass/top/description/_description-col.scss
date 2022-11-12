@@ -2,7 +2,12 @@
 @use "sass:math";
 
 .description-col {
-  padding-bottom: 48px;
-  padding-top: 48px;
-  @include col(2, $m-24, ".description-col__contents");
+  @include mq(tb) {
+    padding-bottom: $m-48;
+    padding-top: $m-48;
+    @include col(2, $m-24, ".description-col__contents");
+  }
+
+  padding-bottom: $m-80;
+  padding-top: $m-80;
 }

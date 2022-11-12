@@ -2,12 +2,15 @@
 @use "sass:math";
 
 .access-link {
-  margin-top: -16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: $m-48;
   mix-blend-mode: difference;
   @include mq(tb) {
     align-items: flex-end;
-    display: flex;
     flex-direction: column;
+    justify-content: normal;
+    margin-top: -16px;
   }
 
   img {

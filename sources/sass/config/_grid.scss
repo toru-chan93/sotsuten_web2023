@@ -4,7 +4,7 @@
 // contentのmargin
 $content-margin-left: get-vw(213px, 1280px);
 $content-margin-right: get-vw(131px, 1280px);
-$content-margin-sp: get-vw(16px, 576px);
+$content-margin-sp: get-vw(30px, 390px);
 
 // contentの幅
 @mixin content-width {

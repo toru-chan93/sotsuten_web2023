@@ -2,16 +2,46 @@
 @use "sass:math";
 
 .access-info {
-  width: calc((100% - 24px) / 11 * 9);
+  width: 100%;
+  @include mq(tb) {
+    width: calc((100% - 24px) / 11 * 9);
+  }
+
+  &__contents {
+    display: flex;
+  }
+
+  &__sp {
+    display: block;
+    width: 25%;
+    @include mq(tb) {
+      display: none;
+    }
+
+    img {
+      mix-blend-mode: difference;
+      width: 32px;
+    }
+  }
 
   &__event {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-left: -16px;
+    margin-top: -16px;
+    @include mq(tb) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      margin-left: -16px;
+    }
 
     ul {
+      display: flex;
+      padding-top: $m-16;
+
       @include mq(tb) {
-        display: flex;
+        padding: 0;
       }
 
       li {
@@ -22,19 +52,38 @@
     }
   }
 
+  &__sub-title {
+    width: get-vw(88px, 390px);
+    @include mq(tb) {
+      width: auto;
+    }
+  }
+
+  &__text {
+    width: 60%;
+    @include mq(tb) {
+      width: auto;
+    }
+  }
+
   &__description {
     p {
       @include text-style-body;
 
       margin-bottom: 0;
+      margin-top: $m-24;
     }
   }
 
   &__time {
-    width: calc((100% - 24px) / 9 * 3);
+    @include mq(tb) {
+      width: calc((100% - 24px) / 9 * 3);
+    }
   }
 
   &__address {
-    width: calc((100% - 24px) / 9 * 6);
+    @include mq(tb) {
+      width: calc((100% - 24px) / 9 * 6);
+    }
   }
 }

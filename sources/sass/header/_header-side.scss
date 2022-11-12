@@ -2,24 +2,47 @@
 @use "sass:math";
 
 .header-side {
-  animation: loop 20s 2s linear infinite;
-  background-image: url(../img/common/header-info.svg);
-  background-repeat: repeat-y;
+  animation: loop-sp 15s 2s linear infinite;
+  background-image: url(../img/common/header-info_sp.svg);
+  background-repeat: repeat-x;
   background-size: auto 100%;
-  height: 100%;
+  bottom: $m-32;
+  height: 18px;
   mix-blend-mode: difference;
   position: fixed;
-  right: 32px;
-  top: 0;
-  width: 18px;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+
+  @include mq(tb) {
+    animation: loop 20s 2s linear infinite;
+    background-image: url(../img/common/header-info.svg);
+    background-repeat: repeat-y;
+    height: 100%;
+    right: 32px;
+    top: 0;
+    width: 18px;
+  }
 }
 
-@keyframes loop {
+@include mq(tb) {
+  @keyframes loop {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: 0 -100vh; /* 画像のマイナス幅 */
+    }
+  }
+}
+
+@keyframes loop-sp {
   from {
     background-position: 0 0;
   }
 
   to {
-    background-position: 0 -100vh; /* 画像のマイナス幅 */
+    background-position: -100vw 0; /* 画像のマイナス幅 */
   }
 }

@@ -1,17 +1,13 @@
-@use '../config/import' as *;
-@use 'sass:math';
+@use "../config/import" as *;
+@use "sass:math";
 
 .header-sp {
-  @include content-width;
-  @include col(2, $m-48, ".header-pc__contents");
+  position: fixed;
   @include mq(tb) {
     display: none;
   }
 
-  display: flex;
-  padding-top: $m-16;
-
-  p {
-    cursor: pointer;
+  img {
+    width: $m-48;
   }
 }

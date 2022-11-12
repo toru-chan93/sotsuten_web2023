@@ -31,8 +31,12 @@
 
   &__canvas {
     background-color: $color-hurt;
+    display: none;
     height: 60vh;
     mix-blend-mode: difference;
     width: calc((100% - 24px) / 11 * 9);
+    @include mq(tb) {
+      display: block;
+    }
   }
 }
