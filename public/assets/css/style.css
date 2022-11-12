@@ -242,10 +242,16 @@ ul {
   width: 32px;
 }
 
+.access-info {
+  width: calc((100% - 24px) / 11 * 9);
+}
 .access-info__event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: -16px;
 }
 @media screen and (min-width: 768px) {
@@ -271,6 +277,12 @@ ul {
   font-weight: normal;
   line-height: 1.8;
   mix-blend-mode: difference;
+}
+.access-info__time {
+  width: calc((100% - 24px) / 9 * 3);
+}
+.access-info__address {
+  width: calc((100% - 24px) / 9 * 6);
 }
 
 .access-link {
