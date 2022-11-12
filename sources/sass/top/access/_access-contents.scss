@@ -8,8 +8,8 @@
   }
 
   &__map {
-    margin-left: get-vw(-32px, 390px);
-    margin-right: get-vw(-32px, 390px);
+    margin-left: get-vw(-31px, 390px);
+    margin-right: get-vw(-31px, 390px);
     @include mq(tb) {
       margin: 0;
       width: calc((100% - 24px) / 11 * 8);

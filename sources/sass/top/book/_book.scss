@@ -2,18 +2,19 @@
 @use "sass:math";
 
 .book {
-  @include mq(tb) {
-    @include content-width;
+  @include content-width;
 
+  background-color: $color-hurt;
+  display: block;
+  height: 100vh;
+  mix-blend-mode: difference;
+  padding-bottom: $m-80;
+  padding-top: $m-80;
+  @include mq(tb) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: $m-48;
     padding-top: $m-48;
   }
-
-  background-color: $color-hurt;
-  display: block;
-  height: 100vh;
-  mix-blend-mode: difference;
 }

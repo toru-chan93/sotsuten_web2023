@@ -3,14 +3,18 @@
 
 .book-contents {
   display: flex;
+  flex-direction: column;
   @include mq(tb) {
+    flex-direction: row;
     justify-content: space-between;
   }
 
   &__text {
     display: flex;
+    justify-content: space-between;
     @include mq(tb) {
       flex-direction: column;
+      justify-content: normal;
       width: calc((100% - 24px) / 11 * 2);
     }
   }
@@ -31,12 +35,16 @@
 
   &__canvas {
     background-color: $color-hurt;
-    display: none;
-    height: 60vh;
+    height: 80vw;
+    margin-left: get-vw(-31px, 390px);
+    margin-right: get-vw(-31px, 390px);
+    margin-top: $m-48;
     mix-blend-mode: difference;
-    width: calc((100% - 24px) / 11 * 9);
+    width: 100vw;
     @include mq(tb) {
-      display: block;
+      height: 60vh;
+      margin: 0;
+      width: calc((100% - 24px) / 11 * 9);
     }
   }
 }
