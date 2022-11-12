@@ -1,0 +1,33 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.access-contents {
+  @include mq(tb) {
+    display: flex;
+
+    &__map {
+      width: calc((100% - 24px) / 11 * 9);
+    }
+
+    &__title {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      width: calc((100% - 24px) / 11 * 2);
+    }
+  }
+
+  &__map {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    mix-blend-mode: difference;
+
+    img {
+      width: 32px;
+    }
+  }
+}

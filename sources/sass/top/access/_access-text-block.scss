@@ -1,0 +1,10 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.access-text-block {
+  padding-top: 48px;
+  @include mq(tb) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

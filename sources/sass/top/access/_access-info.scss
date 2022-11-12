@@ -1,0 +1,27 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.access-info {
+  &__event {
+    display: flex;
+    margin-left: -16px;
+
+    ul {
+      @include mq(tb) {
+        display: flex;
+      }
+
+      li {
+        @include text-style-body;
+
+        padding-left: 16px;
+      }
+    }
+  }
+
+  &__description {
+    p {
+      @include text-style-body;
+    }
+  }
+}

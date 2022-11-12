@@ -1,0 +1,30 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.access {
+  @include mq(tb) {
+    @include content-width;
+
+    padding-bottom: $m-48;
+    padding-top: $m-48;
+  }
+
+  display: block;
+  height: 100vh;
+
+  &__hurt {
+    left: get-vw(476px, 1280px);
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 789px;
+    width: get-vw(504px, 1280px);
+  }
+
+  &__img {
+    width: 100%;
+
+    @include mq(tb) {
+      height: 100%;
+    }
+  }
+}

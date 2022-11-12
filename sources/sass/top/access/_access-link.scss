@@ -1,0 +1,17 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.access-link {
+  margin-top: -16px;
+  mix-blend-mode: difference;
+  @include mq(tb) {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    height: 36px;
+    padding-top: 16px;
+  }
+}

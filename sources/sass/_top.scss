@@ -7,3 +7,10 @@
 @use "top/description/description-title";
 @use "top/description/description-col";
 @use "top/description/description-text";
+
+// access
+@use "top/access/access";
+@use "top/access/access-contents";
+@use "top/access/access-info";
+@use "top/access/access-link";
+@use "top/access/access-text-block";

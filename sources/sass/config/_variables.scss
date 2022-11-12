@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 ////////////
 // margin //
@@ -58,3 +58,16 @@ $mq-breakpoints: (
 
 // 書き方
 // @include mq(xl~xsのどれか){};
+
+///////////////////
+// cssの処理の制御 //
+///////////////////
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
