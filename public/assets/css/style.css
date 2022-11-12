@@ -183,6 +183,16 @@ ul {
     padding-left: 2.7777777778vw;
     padding-right: 2.7777777778vw;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 48px;
     padding-top: 48px;
   }
@@ -193,30 +203,18 @@ ul {
     padding-right: 10.234375vw;
   }
 }
-.access__hurt {
-  left: 37.1875vw;
-  mix-blend-mode: difference;
-  position: absolute;
-  top: 789px;
-  width: 39.375vw;
-}
-.access__img {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .access__img {
-    height: 100%;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .access-contents {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .access-contents__map {
-    width: calc((100% - 24px) / 11 * 9);
+    width: calc((100% - 24px) / 11 * 8);
   }
   .access-contents__title {
     -webkit-box-align: end;
@@ -229,7 +227,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: calc((100% - 24px) / 11 * 2);
+    width: calc((100% - 24px) / 11 * 3);
   }
 }
 .access-contents__map img {
@@ -277,6 +275,7 @@ ul {
   font-weight: normal;
   line-height: 1.8;
   mix-blend-mode: difference;
+  margin-bottom: 0;
 }
 .access-info__time {
   width: calc((100% - 24px) / 9 * 3);
@@ -308,9 +307,6 @@ ul {
   padding-top: 16px;
 }
 
-.access-text-block {
-  padding-top: 48px;
-}
 @media screen and (min-width: 768px) {
   .access-text-block {
     display: -webkit-box;
@@ -319,6 +315,110 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+.book {
+  background-color: #0ff;
+  display: block;
+  height: 100vh;
+  mix-blend-mode: difference;
+}
+@media screen and (min-width: 768px) {
+  .book {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 2.7777777778vw;
+    padding-right: 2.7777777778vw;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 576px) {
+  .book {
+    padding-left: 16.640625vw;
+    padding-right: 10.234375vw;
+  }
+}
+
+.book-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .book-contents {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.book-contents__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .book-contents__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc((100% - 24px) / 11 * 2);
+  }
+}
+.book-contents__title {
+  mix-blend-mode: difference;
+  width: 64px;
+}
+.book-contents__link {
+  padding-top: 48px;
+}
+.book-contents__link img {
+  height: 44px;
+  mix-blend-mode: difference;
+}
+.book-contents__canvas {
+  background-color: #0ff;
+  height: 60vh;
+  mix-blend-mode: difference;
+  width: calc((100% - 24px) / 11 * 9);
+}
+
+@media screen and (min-width: 768px) {
+  .book-text {
+    margin-left: calc((100% - 24px) / 11 * 2 + 24px);
+    width: calc((100% - 24px) / 11 * 6);
+  }
+}
+.book-text p {
+  color: #0ff;
+  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.8;
+  mix-blend-mode: difference;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .book-text p {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
   }
 }
 

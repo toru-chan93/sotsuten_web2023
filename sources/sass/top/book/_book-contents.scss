@@ -1,0 +1,38 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.book-contents {
+  display: flex;
+  @include mq(tb) {
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: flex;
+    @include mq(tb) {
+      flex-direction: column;
+      width: calc((100% - 24px) / 11 * 2);
+    }
+  }
+
+  &__title {
+    mix-blend-mode: difference;
+    width: $m-64;
+  }
+
+  &__link {
+    padding-top: $m-48;
+
+    img {
+      height: 44px;
+      mix-blend-mode: difference;
+    }
+  }
+
+  &__canvas {
+    background-color: $color-hurt;
+    height: 60vh;
+    mix-blend-mode: difference;
+    width: calc((100% - 24px) / 11 * 9);
+  }
+}

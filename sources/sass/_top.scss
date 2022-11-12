@@ -14,3 +14,8 @@
 @use "top/access/access-info";
 @use "top/access/access-link";
 @use "top/access/access-text-block";
+
+// book
+@use "top/book/book";
+@use "top/book/book-contents";
+@use "top/book/book-text";

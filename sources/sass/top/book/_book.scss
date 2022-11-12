@@ -1,7 +1,7 @@
 @use "../../config/import" as *;
 @use "sass:math";
 
-.access {
+.book {
   @include mq(tb) {
     @include content-width;
 
@@ -12,6 +12,8 @@
     padding-top: $m-48;
   }
 
+  background-color: $color-hurt;
   display: block;
   height: 100vh;
+  mix-blend-mode: difference;
 }

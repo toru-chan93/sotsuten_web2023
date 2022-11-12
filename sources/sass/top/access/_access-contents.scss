@@ -4,16 +4,17 @@
 .access-contents {
   @include mq(tb) {
     display: flex;
+    justify-content: space-between;
 
     &__map {
-      width: calc((100% - 24px) / 11 * 9);
+      width: calc((100% - 24px) / 11 * 8);
     }
 
     &__title {
       align-items: flex-end;
       display: flex;
       flex-direction: column;
-      width: calc((100% - 24px) / 11 * 2);
+      width: calc((100% - 24px) / 11 * 3);
     }
   }
 

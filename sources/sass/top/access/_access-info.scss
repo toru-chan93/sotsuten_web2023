@@ -25,6 +25,8 @@
   &__description {
     p {
       @include text-style-body;
+
+      margin-bottom: 0;
     }
   }
 

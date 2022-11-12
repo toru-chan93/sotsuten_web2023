@@ -1,0 +1,19 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.book-text {
+  @include mq(tb) {
+    margin-left: calc((100% - 24px) / 11 * 2 + 24px);
+    width: calc((100% - 24px) / 11 * 6);
+  }
+
+  p {
+    @include text-style-body;
+
+    margin: 0;
+    @include mq(tb) {
+      column-gap: $m-24;
+      columns: 2;
+    }
+  }
+}
