@@ -10,7 +10,7 @@
 
   background-color: $color-hurt;
   display: flex;
-  filter: saturate(1.6);
+  filter: saturate(2);
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
@@ -23,7 +23,7 @@
       width: get-vw(504px, 1280px);
     }
 
-    filter: saturate(1.6);
+    filter: saturate(2);
     left: get-vw(38px, 390px);
     mix-blend-mode: difference;
     position: absolute;

@@ -2,7 +2,7 @@
 @use "sass:math";
 
 .header {
-  filter: saturate(1.6);
+  filter: saturate(2);
   margin-left: 23px;
   margin-top: $m-32;
   mix-blend-mode: difference;
