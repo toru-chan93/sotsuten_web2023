@@ -11,6 +11,7 @@ ul {
 body {
   background-color: white;
   margin: 0;
+  mix-blend-mode: difference;
 }
 
 ::-moz-selection {
@@ -27,6 +28,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-filter: saturate(1.6);
+          filter: saturate(1.6);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -121,6 +124,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-filter: saturate(1.6);
+          filter: saturate(1.6);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -149,6 +154,8 @@ body {
   }
 }
 .description__hurt {
+  -webkit-filter: saturate(1.6);
+          filter: saturate(1.6);
   left: 9.7435897436vw;
   mix-blend-mode: difference;
   position: absolute;
@@ -246,15 +253,17 @@ body {
 }
 
 .access {
+  display: block;
+  -webkit-filter: saturate(1.6);
+          filter: saturate(1.6);
+  height: 100vh;
+  padding-bottom: 80px;
+  padding-top: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 7.6923076923vw;
   padding-right: 7.6923076923vw;
   width: 100%;
-  display: block;
-  height: 100vh;
-  padding-bottom: 80px;
-  padding-top: 80px;
 }
 @media screen and (min-width: 576px) {
   .access {
@@ -300,6 +309,8 @@ body {
   }
 }
 .access-contents__map img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
   width: 100%;
 }
 .access-contents__title {
@@ -485,6 +496,8 @@ body {
   width: 100%;
   background-color: #0ff;
   display: block;
+  -webkit-filter: saturate(1.6);
+          filter: saturate(1.6);
   height: 100vh;
   mix-blend-mode: difference;
   padding-bottom: 80px;
@@ -612,6 +625,8 @@ body {
 }
 
 .header {
+  -webkit-filter: saturate(1.6);
+          filter: saturate(1.6);
   margin-left: 23px;
   margin-top: 32px;
   mix-blend-mode: difference;
@@ -711,6 +726,8 @@ body {
   background-repeat: repeat-x;
   background-size: auto 100%;
   bottom: 32px;
+  -webkit-filter: saturate(1.6);
+          filter: saturate(1.6);
   height: 18px;
   mix-blend-mode: difference;
   position: fixed;

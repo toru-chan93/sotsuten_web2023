@@ -3,6 +3,7 @@
 
 .main {
   display: flex;
+  filter: saturate(1.6);
   flex-direction: column;
   height: 100vh;
   justify-content: center;
