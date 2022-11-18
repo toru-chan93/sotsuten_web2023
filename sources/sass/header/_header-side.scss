@@ -3,6 +3,7 @@
 
 .header-side {
   animation: loop-sp 15s 2s linear infinite;
+  background-blend-mode: difference;
   background-image: url(../img/common/header-info_sp.svg);
   background-repeat: repeat-x;
   background-size: auto 100%;

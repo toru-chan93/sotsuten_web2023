@@ -14,21 +14,22 @@
   }
 
   &__hurt {
-    padding-top: 122px;
     width: 100%;
 
     @include mq(tb) {
       height: 100%;
-      padding-top: 0;
     }
   }
 
   &__reserve {
-    padding-left: get-vw(30px, 390px);
-    padding-top: 72px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: get-vw(30px, 390px);
+    padding-top: $m-24;
 
     @include mq(tb) {
       bottom: 64px;
+      display: block;
       padding: 0;
       position: absolute;
       right: get-vw(124px, 1280px);

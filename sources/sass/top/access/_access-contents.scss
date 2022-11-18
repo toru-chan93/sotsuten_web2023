@@ -8,6 +8,7 @@
   }
 
   &__map {
+    border: 1.5px solid $color-hurt;
     margin-left: get-vw(-31px, 390px);
     margin-right: get-vw(-31px, 390px);
     @include mq(tb) {
