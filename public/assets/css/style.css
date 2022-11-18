@@ -49,11 +49,13 @@ body {
   }
 }
 .main__hurt {
+  margin-top: -40px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .main__hurt {
     height: 100%;
+    margin: 0;
   }
 }
 .main__reserve {

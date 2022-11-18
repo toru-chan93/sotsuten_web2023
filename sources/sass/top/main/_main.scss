@@ -14,10 +14,12 @@
   }
 
   &__hurt {
+    margin-top: -40px;
     width: 100%;
 
     @include mq(tb) {
       height: 100%;
+      margin: 0;
     }
   }
 
