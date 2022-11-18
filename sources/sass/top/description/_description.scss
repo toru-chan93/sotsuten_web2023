@@ -19,7 +19,7 @@
   &__hurt {
     @include mq(tb) {
       left: get-vw(476px, 1280px);
-      top: 789px;
+      top: 120vh;
       width: get-vw(504px, 1280px);
     }
 
@@ -27,7 +27,7 @@
     left: get-vw(38px, 390px);
     mix-blend-mode: difference;
     position: absolute;
-    top: 1129px;
+    top: 125vh;
     width: get-vw(314px, 390px);
   }
 

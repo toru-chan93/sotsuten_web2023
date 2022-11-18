@@ -168,13 +168,13 @@ body {
   left: 9.7435897436vw;
   mix-blend-mode: difference;
   position: absolute;
-  top: 1129px;
+  top: 125vh;
   width: 80.5128205128vw;
 }
 @media screen and (min-width: 768px) {
   .description__hurt {
     left: 37.1875vw;
-    top: 789px;
+    top: 120vh;
     width: 39.375vw;
   }
 }
@@ -460,7 +460,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 48px;
+  margin-top: 24px;
   mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
