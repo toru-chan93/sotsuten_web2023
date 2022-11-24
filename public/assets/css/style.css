@@ -795,9 +795,41 @@ body {
   }
 }
 .footer {
-  background-color: #f00;
-  height: 72px;
+  height: 100vh;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 7.6923076923vw;
+  padding-right: 7.6923076923vw;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .footer {
+    padding-left: 16.640625vw;
+    padding-right: 10.234375vw;
+  }
+}
+.footer__hurt {
+  bottom: -340vh;
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
+  height: 290px;
+  left: 0;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .footer__hurt {
+    left: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
 }
 
 .footer-pc {
@@ -884,4 +916,134 @@ body {
 }
 .footer-sp p {
   cursor: pointer;
+}
+
+.footer-left {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  mix-blend-mode: difference;
+  padding-top: 160px;
+}
+@media screen and (min-width: 768px) {
+  .footer-left {
+    display: block;
+    margin-left: calc((100% - 24px) / 11 * 2 + 24px);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    width: 25.625vw;
+  }
+}
+.footer-left__title {
+  padding-bottom: 32px;
+  width: 56.9230769231vw;
+}
+@media screen and (min-width: 768px) {
+  .footer-left__title {
+    padding-bottom: 40px;
+    width: 16.875vw;
+  }
+}
+.footer-left__time {
+  height: 15px;
+  margin-bottom: 6px;
+  margin-left: -24px;
+}
+@media screen and (min-width: 768px) {
+  .footer-left__time {
+    margin-left: 0;
+  }
+}
+.footer-left__reserve {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer-left__link {
+  height: 38px;
+  width: 200px;
+}
+.footer-left__link img {
+  height: 100%;
+  margin-left: -24px;
+}
+@media screen and (min-width: 768px) {
+  .footer-left__link img {
+    margin: 0;
+  }
+}
+
+.footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  mix-blend-mode: difference;
+  padding-bottom: 48px;
+  padding-top: 64px;
+}
+@media screen and (min-width: 768px) {
+  .footer-right {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+.footer-right p {
+  color: #0ff;
+  margin-top: 48px;
+  mix-blend-mode: difference;
+  color: #0ff;
+  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.2;
+  mix-blend-mode: difference;
+}
+@media screen and (min-width: 768px) {
+  .footer-right p {
+    margin: 0;
+  }
+}
+.footer-right__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-right__contents ul {
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .footer-right__contents ul {
+    width: 13.75vw;
+  }
+}
+.footer-right__contents a {
+  margin-bottom: 12px;
+}
+.footer-right__contents img {
+  height: 28px;
 }

@@ -26,5 +26,14 @@ $font-family-default: "游ゴシック", "YuGothic", "游ゴシック体",
   mix-blend-mode: difference;
 }
 
+@mixin text-style-copy($text-style-important: false) {
+  color: cl.$color-hurt;
+  font-family: $font-family-default;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.2;
+  mix-blend-mode: difference;
+}
+
 // 書き方
 // @include text-style-body()

@@ -1,0 +1,47 @@
+@use "../config/import" as *;
+@use "sass:math";
+
+.footer-right {
+  display: flex;
+  filter: saturate(2);
+  flex-direction: column;
+  justify-content: space-between;
+  mix-blend-mode: difference;
+  padding-bottom: $m-48;
+  padding-top: $m-64;
+  @include mq(tb) {
+    padding-bottom: $m-32;
+    padding-top: $m-32;
+  }
+
+  p {
+    color: $color-hurt;
+    margin-top: $m-48;
+    mix-blend-mode: difference;
+    @include text-style-copy;
+
+    @include mq(tb) {
+      margin: 0;
+    }
+  }
+
+  &__contents {
+    display: flex;
+
+    ul {
+      @include mq(tb) {
+        width: get-vw(176px, 1280px);
+      }
+
+      width: 50%;
+    }
+
+    a {
+      margin-bottom: 12px;
+    }
+
+    img {
+      height: 28px;
+    }
+  }
+}
