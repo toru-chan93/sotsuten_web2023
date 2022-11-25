@@ -1,0 +1,30 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.staff-contents {
+  &__title {
+    filter: saturate(2);
+    height: 74px;
+    margin-top: $m-96;
+    @include mq(tb) {
+      margin-top: $m-48;
+    }
+  }
+
+  &__text {
+    @include mq(tb) {
+      padding-top: 136px;
+      width: get-vw(503px, 1280px);
+    }
+    @include text-style-body;
+
+    filter: saturate(2);
+    padding-top: $m-32;
+    width: 100%;
+
+    p {
+      margin: 0;
+      padding-bottom: $m-16;
+    }
+  }
+}

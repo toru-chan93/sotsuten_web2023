@@ -1,0 +1,61 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.visitor-explain-02 {
+  display: none;
+
+  @include mq(tb) {
+    align-items: flex-start;
+    display: flex;
+    margin-top: $m-72;
+  }
+
+  &__sp {
+    align-items: flex-start;
+    display: flex;
+    margin-top: $m-48;
+
+    @include mq(tb) {
+      display: none;
+    }
+  }
+
+  &__title {
+    width: get-vw(64px, 390px);
+
+    @include mq(tb) {
+      width: get-vw(63px, 1280px);
+    }
+  }
+
+  &__text-block {
+    padding-left: get-vw(24px, 390px);
+    width: auto;
+
+    @include mq(tb) {
+      padding-left: get-vw(16px, 1280px);
+      width: get-vw(328px, 1280px);
+    }
+  }
+
+  &__text {
+    list-style: disc;
+    margin: 0;
+    margin-left: get-vw(24px, 390px);
+    margin-top: -5px;
+    padding-bottom: $m-16;
+    @include text-style-body;
+    @include mq(tb) {
+      margin-left: get-vw(24px, 1280px);
+    }
+  }
+
+  &__underline {
+    border-bottom: 1.5px solid;
+    list-style: none;
+    margin-bottom: 21px;
+    margin-left: 0;
+    padding-bottom: $m-8;
+    width: fit-content;
+  }
+}

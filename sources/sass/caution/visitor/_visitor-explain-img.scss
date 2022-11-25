@@ -1,0 +1,96 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.visitor-explain-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $m-48;
+
+  &__sp {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $m-48;
+
+    @include mq(tb) {
+      display: none;
+    }
+  }
+
+  &__colm {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding-right: get-vw(24px, 390px);
+    width: get-vw(64px, 390px);
+
+    @include mq(tb) {
+      padding-right: get-vw(24px, 1280px);
+      width: get-vw(64px, 1280px);
+    }
+  }
+
+  &__pict {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -48px;
+  }
+
+  &__pict-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -48px;
+  }
+
+  &__contents {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: get-vw(24px, 390px);
+    width: fit-content;
+    @include mq(tb) {
+      padding-right: $m-24;
+      width: auto;
+    }
+  }
+
+  &__contents-bottom {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: get-vw(9.38px, 390px);
+    width: fit-content;
+    @include mq(tb) {
+      padding-right: get-vw(13px, 1280px);
+      width: auto;
+    }
+  }
+
+  &__icon {
+    @include mq(tb) {
+      width: get-vw(152px, 1280px);
+    }
+
+    filter: invert(1);
+    width: get-vw(110px, 390px);
+  }
+
+  &__icon-bottom {
+    @include mq(tb) {
+      width: get-vw(100px, 1280px);
+    }
+
+    filter: invert(1);
+    width: get-vw(73px, 390px);
+  }
+
+  &__caption {
+    @include text-style-body;
+
+    font-size: 12px;
+    @include mq(tb) {
+      font-size: 16px;
+    }
+  }
+}

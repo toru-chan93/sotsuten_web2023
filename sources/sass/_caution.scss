@@ -1,0 +1,17 @@
+// main
+@use "../sass/caution/main/main";
+
+// staff
+@use "../sass/caution/staff/staff";
+@use "../sass/caution/staff/staff-contents";
+@use "../sass/caution/staff/staff-img";
+
+// visitor
+@use "../sass/caution/visitor/visitor";
+@use "../sass/caution/visitor/visitor-contents";
+@use "../sass/caution/visitor/visitor-colm";
+@use "../sass/caution/visitor/visitor-explain-01";
+@use "../sass/caution/visitor/visitor-explain-02";
+@use "../sass/caution/visitor/visitor-explain-03";
+@use "../sass/caution/visitor/visitor-explain-ex";
+@use "../sass/caution/visitor/visitor-explain-img";

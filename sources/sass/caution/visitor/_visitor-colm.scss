@@ -1,0 +1,9 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.visitor-colm {
+  display: block;
+  @include mq(tb) {
+    width: get-vw(416px, 1280px);
+  }
+}

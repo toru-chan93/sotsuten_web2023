@@ -1,0 +1,13 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.staff {
+  @include content-width;
+
+  align-items: center;
+  display: flex;
+  margin-top: 0;
+  @include mq(tb) {
+    margin-top: $m-96;
+  }
+}
