@@ -1,8 +1,12 @@
-@use "top";
-
 // common
 @use "../sass/header";
 @use "../sass/footer";
 
+// top
+@use "top";
+
 // caution
 @use "../sass/caution";
+
+// archive
+@use "../sass/archive";

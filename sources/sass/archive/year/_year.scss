@@ -1,0 +1,12 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.year {
+  margin-bottom: $m-64;
+  margin-top: $m-80;
+
+  @include content-width;
+  @include mq(tb) {
+    margin-top: $m-48;
+  }
+}

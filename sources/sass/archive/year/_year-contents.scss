@@ -1,0 +1,41 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.year-contents {
+  display: block;
+  @include mq(tb) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__unit {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: calc(-1 * (get-vw(30px, 390px)));
+    padding-bottom: $m-32;
+
+    @include mq(tb) {
+      margin: 0;
+      padding-bottom: $m-64;
+      width: get-vw(416px, 1280px);
+    }
+  }
+
+  &__title {
+    width: get-vw(24px, 390px);
+    @include mq(tb) {
+      width: get-vw(24px, 1280px);
+    }
+  }
+
+  &__img {
+    width: get-vw(271px, 390px);
+
+    @include mq(tb) {
+      width: get-vw(328px, 1280px);
+    }
+  }
+}
