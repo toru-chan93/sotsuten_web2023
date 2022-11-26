@@ -13,7 +13,7 @@ $content-margin-sp: get-vw(30px, 390px);
   padding-right: $content-margin-sp;
   width: 100%;
 
-  @include mq(sm) {
+  @include mq(tb) {
     padding-left: $content-margin-left;
     padding-right: $content-margin-right;
   }
