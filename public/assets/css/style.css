@@ -26,8 +26,12 @@ body {
   color: white;
 }
 
-canvas {
+main {
   display: none;
+}
+
+a :hover {
+  opacity: 0.6;
 }
 
 .header {
@@ -46,6 +50,68 @@ canvas {
   }
 }
 
+.header-side {
+  -webkit-animation: loop-sp 15s 2s linear infinite;
+          animation: loop-sp 15s 2s linear infinite;
+  background-blend-mode: difference;
+  background-image: url(../img/common/header-info_sp.svg);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  bottom: 32px;
+  height: 18px;
+  mix-blend-mode: difference;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .header-side {
+    -webkit-animation: loop 20s 2s linear infinite;
+            animation: loop 20s 2s linear infinite;
+    background-image: url(../img/common/header-info.svg);
+    background-repeat: repeat-y;
+    height: 100%;
+    right: 32px;
+    top: 0;
+    width: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes loop {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -100vh; /* 画像のマイナス幅 */
+    }
+  }
+  @keyframes loop {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -100vh; /* 画像のマイナス幅 */
+    }
+  }
+}
+@-webkit-keyframes loop-sp {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100vw 0; /* 画像のマイナス幅 */
+  }
+}
+@keyframes loop-sp {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100vw 0; /* 画像のマイナス幅 */
+  }
+}
 .header-pc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,68 +178,74 @@ canvas {
   width: 48px;
 }
 
-.header-side {
-  -webkit-animation: loop-sp 15s 2s linear infinite;
-          animation: loop-sp 15s 2s linear infinite;
-  background-blend-mode: difference;
-  background-image: url(../img/common/header-info_sp.svg);
-  background-repeat: repeat-x;
-  background-size: auto 100%;
-  bottom: 32px;
-  height: 18px;
-  mix-blend-mode: difference;
-  position: fixed;
-  right: 0;
+.header-nav {
+  background-color: #fff;
+  height: 100vh;
+  left: -100vw;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 7.6923076923vw;
+  padding-right: 7.6923076923vw;
   width: 100%;
-  z-index: 10;
 }
 @media screen and (min-width: 768px) {
-  .header-side {
-    -webkit-animation: loop 20s 2s linear infinite;
-            animation: loop 20s 2s linear infinite;
-    background-image: url(../img/common/header-info.svg);
-    background-repeat: repeat-y;
-    height: 100%;
-    right: 32px;
-    top: 0;
-    width: 18px;
+  .header-nav {
+    padding-left: 16.640625vw;
+    padding-right: 10.234375vw;
   }
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+}
+.header-nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 96px;
+}
+.header-nav__button {
+  margin: 0;
+}
+.header-nav__button img {
+  height: 36px;
+}
+.header-nav__sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
+}
+.header-nav__info {
+  margin-top: 56px;
+}
+.header-nav__title {
+  padding-bottom: 48px;
+  width: 56.6666666667vw;
+}
+.header-nav__time {
+  height: 25px;
+  padding-bottom: 8px;
+}
+.header-nav__reserve {
+  margin: 0;
+}
+.header-nav__reserve img {
+  height: 38px;
 }
 
-@media screen and (min-width: 768px) {
-  @-webkit-keyframes loop {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 0 -100vh; /* 画像のマイナス幅 */
-    }
-  }
-  @keyframes loop {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 0 -100vh; /* 画像のマイナス幅 */
-    }
-  }
-}
-@-webkit-keyframes loop-sp {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -100vw 0; /* 画像のマイナス幅 */
-  }
-}
-@keyframes loop-sp {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -100vw 0; /* 画像のマイナス幅 */
-  }
-}
 .footer {
   height: 100vh;
   width: 100%;
@@ -656,6 +728,11 @@ canvas {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .access-info__contents {
+    width: 53.046875vw;
+  }
+}
 .access-info__sp {
   display: block;
   width: 25%;
@@ -738,7 +815,7 @@ canvas {
 }
 @media screen and (min-width: 768px) {
   .access-info__time {
-    width: calc((100% - 24px) / 9 * 3);
+    width: 18.75vw;
   }
 }
 @media screen and (min-width: 768px) {

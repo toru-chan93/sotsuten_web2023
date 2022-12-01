@@ -85,6 +85,10 @@ body {
   color: white;
 }
 
-canvas {
+main {
   display: none;
+}
+
+a :hover {
+  opacity: 0.6;
 }

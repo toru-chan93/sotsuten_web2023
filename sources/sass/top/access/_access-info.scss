@@ -9,6 +9,9 @@
 
   &__contents {
     display: flex;
+    @include mq(tb) {
+      width: get-vw(679px, 1280px);
+    }
   }
 
   &__sp {
@@ -76,7 +79,7 @@
 
   &__time {
     @include mq(tb) {
-      width: calc((100% - 24px) / 9 * 3);
+      width: get-vw(240px, 1280px);
     }
   }
 
