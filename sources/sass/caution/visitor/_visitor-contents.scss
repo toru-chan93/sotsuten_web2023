@@ -3,7 +3,6 @@
 
 .visitor-contents {
   display: block;
-  filter: saturate(2);
   @include mq(tb) {
     display: flex;
     justify-content: space-between;
@@ -11,7 +10,6 @@
 
   &__bottom {
     display: none;
-    filter: saturate(2);
     @include mq(tb) {
       align-items: center;
       display: flex;

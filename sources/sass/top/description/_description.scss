@@ -8,31 +8,28 @@
     justify-content: center;
   }
 
-  background-color: $color-hurt;
+  background-color: $color-main;
   display: flex;
-  filter: saturate(2);
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  mix-blend-mode: difference;
 
   &__hurt {
-    @include mq(tb) {
-      left: get-vw(476px, 1280px);
-      top: 120vh;
-      width: get-vw(504px, 1280px);
-    }
-
     filter: saturate(2);
     left: get-vw(38px, 390px);
     mix-blend-mode: difference;
     position: absolute;
     top: 125vh;
     width: get-vw(314px, 390px);
+
+    @include mq(tb) {
+      left: get-vw(476px, 1280px);
+      top: 120vh;
+      width: get-vw(504px, 1280px);
+    }
   }
 
   &__img {
-    mix-blend-mode: difference;
     width: 100%;
 
     @include mq(tb) {

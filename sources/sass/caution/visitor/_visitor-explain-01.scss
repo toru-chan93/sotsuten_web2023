@@ -19,6 +19,7 @@
   }
 
   &__text-block {
+    margin-top: 4px;
     padding-left: get-vw(24px, 390px);
     width: auto;
 
@@ -29,10 +30,9 @@
   }
 
   &__text {
-    @include text-style-body;
-
     margin: 0;
     margin-top: -5px;
     padding-bottom: $m-16;
+    @include text-style-body_red;
   }
 }

@@ -4,9 +4,7 @@
 .footer-left {
   align-items: flex-end;
   display: flex;
-  filter: saturate(2);
   flex-direction: column;
-  mix-blend-mode: difference;
   padding-top: 160px;
 
   @include mq(tb) {

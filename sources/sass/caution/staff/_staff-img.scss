@@ -39,7 +39,6 @@
   }
 
   &__icon {
-    filter: invert(1);
     width: get-vw(152px, 390px);
     @include mq(tb) {
       width: get-vw(152px, 1280px);
@@ -47,7 +46,6 @@
   }
 
   &__caption {
-    filter: saturate(2);
-    @include text-style-body;
+    @include text-style-body_red;
   }
 }

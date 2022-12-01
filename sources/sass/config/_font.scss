@@ -2,18 +2,31 @@
 @use "./colors" as cl;
 @use "sass:math";
 
-$font-family-default: "游ゴシック", "YuGothic", "游ゴシック体",
-  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+// Noto Sans JP
+@import "http://fonts.googleapis.com/earlyaccess/notosansjp.css";
+
+$font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
+  "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
 
 // typographyの設定は下記に記述
 // body
-@mixin text-style-body($text-style-important: false) {
-  color: cl.$color-hurt;
+
+// red
+@mixin text-style-body_red($text-style-important: false) {
+  color: cl.$color-main;
   font-family: $font-family-default;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
+}
+
+// white
+@mixin text-style-body_white($text-style-important: false) {
+  color: cl.$color-white;
+  font-family: $font-family-default;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 // title
@@ -23,16 +36,24 @@ $font-family-default: "游ゴシック", "YuGothic", "游ゴシック体",
   font-size: 24px;
   font-weight: bold;
   line-height: 1.3;
-  mix-blend-mode: difference;
 }
 
+// caption
+@mixin text-style-caption($text-style-important: false) {
+  color: cl.$color-main;
+  font-family: $font-family-default;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.8;
+}
+
+// copy
 @mixin text-style-copy($text-style-important: false) {
-  color: cl.$color-hurt;
+  color: cl.$color-main;
   font-family: $font-family-default;
   font-size: 11px;
   font-weight: bold;
   line-height: 1.2;
-  mix-blend-mode: difference;
 }
 
 // 書き方

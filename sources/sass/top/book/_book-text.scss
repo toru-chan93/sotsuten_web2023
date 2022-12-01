@@ -10,7 +10,7 @@
   }
 
   p {
-    @include text-style-body;
+    @include text-style-body_white;
 
     margin: 0;
     @include mq(tb) {

@@ -19,7 +19,6 @@
     }
 
     img {
-      mix-blend-mode: difference;
       width: 32px;
     }
   }
@@ -45,7 +44,7 @@
       }
 
       li {
-        @include text-style-body;
+        @include text-style-body_red;
 
         padding-left: 16px;
       }
@@ -68,7 +67,7 @@
 
   &__description {
     p {
-      @include text-style-body;
+      @include text-style-body_red;
 
       margin-bottom: 0;
       margin-top: $m-24;

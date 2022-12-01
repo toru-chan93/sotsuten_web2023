@@ -15,7 +15,7 @@
     justify-content: space-between;
     margin: 0;
     margin-right: calc(-1 * (get-vw(30px, 390px)));
-    padding-bottom: $m-32;
+    padding-bottom: $m-48;
 
     @include mq(tb) {
       margin: 0;

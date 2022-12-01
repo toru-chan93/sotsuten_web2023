@@ -1,8 +1,13 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
 .description-text {
   align-items: flex-end;
   display: flex;
 
   p {
+    @include text-style-body_white;
+
     margin: 0;
   }
 }

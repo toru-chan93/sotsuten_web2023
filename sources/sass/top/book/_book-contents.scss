@@ -20,7 +20,6 @@
   }
 
   &__title {
-    mix-blend-mode: difference;
     width: $m-64;
   }
 
@@ -29,17 +28,15 @@
 
     img {
       height: 44px;
-      mix-blend-mode: difference;
     }
   }
 
   &__canvas {
-    background-color: $color-hurt;
+    background-color: $color-white;
     height: 80vw;
     margin-left: get-vw(-31px, 390px);
     margin-right: get-vw(-31px, 390px);
     margin-top: $m-48;
-    mix-blend-mode: difference;
     width: 100vw;
     @include mq(tb) {
       height: 60vh;

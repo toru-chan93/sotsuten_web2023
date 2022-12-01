@@ -3,7 +3,6 @@
 
 .staff-contents {
   &__title {
-    filter: saturate(2);
     height: 74px;
     margin-top: $m-96;
     @include mq(tb) {
@@ -16,9 +15,8 @@
       padding-top: 136px;
       width: get-vw(503px, 1280px);
     }
-    @include text-style-body;
+    @include text-style-body_red;
 
-    filter: saturate(2);
     padding-top: $m-32;
     width: 100%;
 

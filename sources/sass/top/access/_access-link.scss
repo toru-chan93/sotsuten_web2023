@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: $m-24;
-  mix-blend-mode: difference;
   @include mq(tb) {
     align-items: flex-end;
     flex-direction: column;

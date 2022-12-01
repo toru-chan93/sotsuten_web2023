@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "http://fonts.googleapis.com/earlyaccess/notosansjp.css";
 li {
   list-style: none;
   text-decoration: none;
@@ -13,7 +14,6 @@ ul {
 body {
   background-color: white;
   margin: 0;
-  mix-blend-mode: difference;
 }
 
 ::-moz-selection {
@@ -31,8 +31,6 @@ canvas {
 }
 
 .header {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   margin-left: 23px;
   margin-top: 32px;
   mix-blend-mode: difference;
@@ -78,24 +76,12 @@ canvas {
   margin-bottom: 64px;
 }
 .header-pc__logo {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8;
-  mix-blend-mode: difference;
   padding-top: 16px;
 }
 .header-pc__logo:hover {
   cursor: pointer;
 }
 .header-pc__items {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8;
-  mix-blend-mode: difference;
   height: 30px;
   padding-right: 16px;
   padding-top: 16px;
@@ -134,8 +120,6 @@ canvas {
   background-repeat: repeat-x;
   background-size: auto 100%;
   bottom: 32px;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   height: 18px;
   mix-blend-mode: difference;
   position: fixed;
@@ -207,8 +191,6 @@ canvas {
 }
 .footer__hurt {
   bottom: -340vh;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   height: 290px;
   left: 0;
   mix-blend-mode: difference;
@@ -235,13 +217,10 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  mix-blend-mode: difference;
   padding-top: 160px;
 }
 @media screen and (min-width: 768px) {
@@ -303,8 +282,6 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -312,7 +289,6 @@ canvas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  mix-blend-mode: difference;
   padding-bottom: 48px;
   padding-top: 64px;
 }
@@ -325,13 +301,11 @@ canvas {
 .footer-right p {
   color: #0ff;
   margin-top: 48px;
-  mix-blend-mode: difference;
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 11px;
   font-weight: bold;
   line-height: 1.2;
-  mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
   .footer-right p {
@@ -362,8 +336,6 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -372,7 +344,6 @@ canvas {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
   .main {
@@ -383,7 +354,10 @@ canvas {
   }
 }
 .main__hurt {
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
   margin-top: -40px;
+  mix-blend-mode: difference;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -420,38 +394,34 @@ canvas {
 }
 .top-description__section {
   color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.3;
-  mix-blend-mode: difference;
   padding-top: 16px;
 }
 .top-description__contents {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #fff;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
   padding-bottom: 16px;
   padding-top: 16px;
 }
 .top-description__title {
   color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.3;
-  mix-blend-mode: difference;
 }
 .top-description__body {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #fff;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
   padding-top: 16px;
 }
 
@@ -461,12 +431,10 @@ canvas {
   padding-left: 7.6923076923vw;
   padding-right: 7.6923076923vw;
   width: 100%;
-  background-color: #0ff;
+  background-color: #f00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -475,7 +443,6 @@ canvas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
   .description {
@@ -511,7 +478,6 @@ canvas {
   }
 }
 .description__img {
-  mix-blend-mode: difference;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -535,7 +501,6 @@ canvas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
   .description-title {
@@ -590,13 +555,16 @@ canvas {
   display: flex;
 }
 .description-text p {
+  color: #fff;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
   margin: 0;
 }
 
 .access {
   display: block;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   height: 100vh;
   padding-bottom: 80px;
   padding-top: 80px;
@@ -640,7 +608,7 @@ canvas {
   }
 }
 .access-contents__map {
-  border: 1.5px solid #0ff;
+  border: 1.5px solid #f00;
   margin-left: -7.9487179487vw;
   margin-right: -7.9487179487vw;
 }
@@ -651,13 +619,10 @@ canvas {
   }
 }
 .access-contents__map img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
   width: 100%;
 }
 .access-contents__title {
   display: none;
-  mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
   .access-contents__title {
@@ -701,7 +666,6 @@ canvas {
   }
 }
 .access-info__sp img {
-  mix-blend-mode: difference;
   width: 32px;
 }
 .access-info__event {
@@ -740,12 +704,11 @@ canvas {
   }
 }
 .access-info__event ul li {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
   padding-left: 16px;
 }
 .access-info__sub-title {
@@ -765,12 +728,11 @@ canvas {
   }
 }
 .access-info__description p {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
   margin-bottom: 0;
   margin-top: 24px;
 }
@@ -793,7 +755,6 @@ canvas {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 24px;
-  mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
   .access-link {
@@ -831,19 +792,16 @@ canvas {
 }
 
 .book {
+  background-color: #f00;
+  display: block;
+  height: 100vh;
+  padding-bottom: 80px;
+  padding-top: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 7.6923076923vw;
   padding-right: 7.6923076923vw;
   width: 100%;
-  background-color: #0ff;
-  display: block;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
-  height: 100vh;
-  mix-blend-mode: difference;
-  padding-bottom: 80px;
-  padding-top: 80px;
 }
 @media screen and (min-width: 768px) {
   .book {
@@ -909,7 +867,6 @@ canvas {
   }
 }
 .book-contents__title {
-  mix-blend-mode: difference;
   width: 64px;
 }
 .book-contents__link {
@@ -917,15 +874,13 @@ canvas {
 }
 .book-contents__link img {
   height: 44px;
-  mix-blend-mode: difference;
 }
 .book-contents__canvas {
-  background-color: #0ff;
+  background-color: #fff;
   height: 80vw;
   margin-left: -7.9487179487vw;
   margin-right: -7.9487179487vw;
   margin-top: 48px;
-  mix-blend-mode: difference;
   width: 100vw;
 }
 @media screen and (min-width: 768px) {
@@ -947,12 +902,11 @@ canvas {
   }
 }
 .book-text p {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #fff;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -986,27 +940,22 @@ canvas {
   }
 }
 .caution-main__title {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   height: 112px;
   margin-top: 96px;
 }
 @media screen and (min-width: 768px) {
   .caution-main__title {
-    margin-top: 48px;
+    margin-top: 44px;
   }
 }
 .caution-main__text {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8;
-  mix-blend-mode: difference;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   padding-top: 48px;
   width: 100%;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
   .caution-main__text {
@@ -1017,6 +966,7 @@ canvas {
 .caution-main__hurt {
   -webkit-filter: saturate(2);
           filter: saturate(2);
+  mix-blend-mode: difference;
   position: absolute;
   top: 430px;
   width: calc(100% - 36px);
@@ -1056,8 +1006,6 @@ canvas {
 }
 
 .staff-contents__title {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   height: 74px;
   margin-top: 96px;
 }
@@ -1067,14 +1015,11 @@ canvas {
   }
 }
 .staff-contents__text {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   padding-top: 32px;
   width: 100%;
 }
@@ -1142,8 +1087,6 @@ canvas {
   }
 }
 .staff-img__icon {
-  -webkit-filter: invert(1);
-          filter: invert(1);
   width: 38.9743589744vw;
 }
 @media screen and (min-width: 768px) {
@@ -1152,14 +1095,11 @@ canvas {
   }
 }
 .staff-img__caption {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
 }
 
 .visitor {
@@ -1183,8 +1123,6 @@ canvas {
   }
 }
 .visitor__title {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   height: 74px;
   margin-top: 96px;
 }
@@ -1196,8 +1134,6 @@ canvas {
 
 .visitor-contents {
   display: block;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
 }
 @media screen and (min-width: 768px) {
   .visitor-contents {
@@ -1211,8 +1147,6 @@ canvas {
 }
 .visitor-contents__bottom {
   display: none;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
 }
 @media screen and (min-width: 768px) {
   .visitor-contents__bottom {
@@ -1260,6 +1194,7 @@ canvas {
   }
 }
 .visitor-explain-01__text-block {
+  margin-top: 4px;
   padding-left: 6.1538461538vw;
   width: auto;
 }
@@ -1270,15 +1205,14 @@ canvas {
   }
 }
 .visitor-explain-01__text {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8;
-  mix-blend-mode: difference;
   margin: 0;
   margin-top: -5px;
   padding-bottom: 16px;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 .visitor-explain-02 {
@@ -1318,6 +1252,7 @@ canvas {
   }
 }
 .visitor-explain-02__text-block {
+  margin-top: 4px;
   padding-left: 6.1538461538vw;
   width: auto;
 }
@@ -1333,12 +1268,11 @@ canvas {
   margin-left: 6.1538461538vw;
   margin-top: -5px;
   padding-bottom: 16px;
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
-  mix-blend-mode: difference;
 }
 @media screen and (min-width: 768px) {
   .visitor-explain-02__text {
@@ -1379,6 +1313,7 @@ canvas {
   }
 }
 .visitor-explain-03__text-block {
+  margin-top: 4px;
   padding-left: 6.1538461538vw;
   width: auto;
 }
@@ -1389,15 +1324,14 @@ canvas {
   }
 }
 .visitor-explain-03__text {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8;
-  mix-blend-mode: difference;
   margin: 0;
   margin-top: -5px;
   padding-bottom: 16px;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 .visitor-explain-ex {
@@ -1440,15 +1374,14 @@ canvas {
   }
 }
 .visitor-explain-ex__text {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8;
-  mix-blend-mode: difference;
   margin: 0;
   margin-top: -5px;
   padding-bottom: 16px;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 .visitor-explain-img {
@@ -1553,8 +1486,6 @@ canvas {
   }
 }
 .visitor-explain-img__icon {
-  -webkit-filter: invert(1);
-          filter: invert(1);
   width: 28.2051282051vw;
 }
 @media screen and (min-width: 768px) {
@@ -1563,8 +1494,6 @@ canvas {
   }
 }
 .visitor-explain-img__icon-bottom {
-  -webkit-filter: invert(1);
-          filter: invert(1);
   width: 18.7179487179vw;
 }
 @media screen and (min-width: 768px) {
@@ -1573,26 +1502,26 @@ canvas {
   }
 }
 .visitor-explain-img__caption {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 12px;
   font-weight: normal;
   line-height: 1.8;
-  mix-blend-mode: difference;
-  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
   .visitor-explain-img__caption {
+    color: #f00;
+    font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
     font-size: 16px;
   }
 }
 
 .archive-main {
-  background-color: #0ff;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
+  background-color: #f00;
   height: 100vh;
-  mix-blend-mode: difference;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 7.6923076923vw;
@@ -1616,8 +1545,6 @@ canvas {
   }
 }
 .archive-main__title {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   height: 29px;
   margin-top: 96px;
 }
@@ -1627,16 +1554,13 @@ canvas {
   }
 }
 .archive-main__text {
-  color: #0ff;
-  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8;
-  mix-blend-mode: difference;
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
   padding-top: 48px;
   width: 100%;
+  color: #fff;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
   .archive-main__text {
@@ -1647,6 +1571,7 @@ canvas {
 .archive-main__hurt {
   -webkit-filter: saturate(2);
           filter: saturate(2);
+  mix-blend-mode: difference;
   position: absolute;
   top: 430px;
   width: calc(100% - 36px);
@@ -1707,7 +1632,7 @@ canvas {
           justify-content: space-between;
   margin: 0;
   margin-right: -7.6923076923vw;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
   .year-contents__unit {

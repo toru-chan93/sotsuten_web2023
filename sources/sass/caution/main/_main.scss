@@ -10,31 +10,30 @@
   }
 
   &__title {
-    filter: saturate(2);
     height: 112px;
     margin-top: $m-96;
     @include mq(tb) {
-      margin-top: $m-48;
+      margin-top: 44px;
     }
   }
 
   &__text {
+    padding-top: $m-48;
+    width: 100%;
     @include mq(tb) {
       padding-top: 164px;
       width: get-vw(426px, 1280px);
     }
-    @include text-style-body;
-
-    filter: saturate(2);
-    padding-top: $m-48;
-    width: 100%;
+    @include text-style-body_red;
   }
 
   &__hurt {
     filter: saturate(2);
+    mix-blend-mode: difference;
     position: absolute;
     top: 430px;
     width: calc(100% - 36px);
+
     @include mq(tb) {
       right: get-vw(124px, 1280px);
       top: $m-48;

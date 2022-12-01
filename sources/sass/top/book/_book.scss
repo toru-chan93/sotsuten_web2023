@@ -2,15 +2,13 @@
 @use "sass:math";
 
 .book {
-  @include content-width;
-
-  background-color: $color-hurt;
+  background-color: $color-main;
   display: block;
-  filter: saturate(2);
   height: 100vh;
-  mix-blend-mode: difference;
   padding-bottom: $m-80;
   padding-top: $m-80;
+  @include content-width;
+
   @include mq(tb) {
     display: flex;
     flex-direction: column;

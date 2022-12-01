@@ -11,7 +11,6 @@
   }
 
   &__title {
-    filter: saturate(2);
     height: 74px;
     margin-top: $m-96;
     @include mq(tb) {

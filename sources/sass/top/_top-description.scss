@@ -1,5 +1,5 @@
-@use '../config/import' as *;
-@use 'sass:math';
+@use "../config/import" as *;
+@use "sass:math";
 
 .top-description {
   width: 100%;
@@ -11,7 +11,7 @@
   }
 
   &__contents {
-    @include text-style-body;
+    @include text-style-body_white;
 
     padding-bottom: $m-16;
     padding-top: $m-16;
@@ -22,7 +22,7 @@
   }
 
   &__body {
-    @include text-style-body;
+    @include text-style-body_white;
 
     padding-top: $m-16;
   }

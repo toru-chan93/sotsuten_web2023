@@ -3,10 +3,8 @@
 
 .footer-right {
   display: flex;
-  filter: saturate(2);
   flex-direction: column;
   justify-content: space-between;
-  mix-blend-mode: difference;
   padding-bottom: $m-48;
   padding-top: $m-64;
   @include mq(tb) {
@@ -17,7 +15,6 @@
   p {
     color: $color-hurt;
     margin-top: $m-48;
-    mix-blend-mode: difference;
     @include text-style-copy;
 
     @include mq(tb) {

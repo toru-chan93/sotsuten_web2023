@@ -3,18 +3,18 @@
 
 .main {
   display: flex;
-  filter: saturate(2);
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  mix-blend-mode: difference;
 
   @include mq(tb) {
     flex-direction: row;
   }
 
   &__hurt {
+    filter: saturate(2);
     margin-top: -40px;
+    mix-blend-mode: difference;
     width: 100%;
 
     @include mq(tb) {
