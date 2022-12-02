@@ -6,7 +6,7 @@
   margin-top: $m-32;
   mix-blend-mode: difference;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   @include mq(tb) {
     margin-left: $m-32;
     width: min-content;

@@ -3,11 +3,12 @@
 
 .header-nav {
   background-color: $color-white;
+  display: none;
   height: 100vh;
-  left: -100vw;
+  left: 0;
 
   // left: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
 

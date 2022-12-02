@@ -39,7 +39,7 @@ a :hover {
   margin-top: 32px;
   mix-blend-mode: difference;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -180,9 +180,10 @@ a :hover {
 
 .header-nav {
   background-color: #fff;
+  display: none;
   height: 100vh;
-  left: -100vw;
-  position: absolute;
+  left: 0;
+  position: fixed;
   top: 0;
   width: 100vw;
   -webkit-box-sizing: border-box;
@@ -1732,5 +1733,33 @@ a :hover {
 @media screen and (min-width: 768px) {
   .year-contents__img {
     width: 25.625vw;
+  }
+}
+
+.js-nav__in {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: nav-slide;
+          animation-name: nav-slide;
+  display: block;
+  left: 0;
+  z-index: 90;
+}
+
+@-webkit-keyframes nav-slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes nav-slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
   }
 }

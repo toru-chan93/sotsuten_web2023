@@ -1,0 +1,22 @@
+@use "../config/import" as *;
+@use "sass:math";
+
+.js-nav {
+  &__in {
+    animation-duration: 0.5s;
+    animation-name: nav-slide;
+    display: block;
+    left: 0;
+    z-index: 90;
+  }
+}
+
+@keyframes nav-slide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
