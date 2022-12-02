@@ -26,7 +26,7 @@ body {
   color: white;
 }
 
-main {
+#defaultCanvas0 {
   display: none;
 }
 
@@ -125,7 +125,7 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .header-pc {
-    display: block;
+    display: none;
   }
 }
 .header-pc .header-pc__contents {
@@ -230,6 +230,16 @@ a :hover {
   margin-top: 32px;
 }
 .header-nav__info {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 56px;
 }
 .header-nav__title {
@@ -1756,6 +1766,31 @@ a :hover {
 }
 
 @keyframes nav-slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.js-fadein {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: header-fadein;
+          animation-name: header-fadein;
+  display: block;
+}
+
+@-webkit-keyframes header-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes header-fadein {
   0% {
     opacity: 0;
   }

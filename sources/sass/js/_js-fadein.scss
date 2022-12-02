@@ -1,0 +1,18 @@
+@use "../config/import" as *;
+@use "sass:math";
+
+.js-fadein {
+  animation-duration: 0.5s;
+  animation-name: header-fadein;
+  display: block;
+}
+
+@keyframes header-fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}

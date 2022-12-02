@@ -38,6 +38,9 @@
   }
 
   &__info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     margin-top: 56px;
   }
 
