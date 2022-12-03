@@ -1,0 +1,17 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.note {
+  margin-top: $m-80;
+  @include content-width;
+  @include mq(tb) {
+    margin-top: 40px;
+  }
+
+  &__title {
+    padding-bottom: $m-48;
+    @include mq(tb) {
+      padding-bottom: $m-64;
+    }
+  }
+}

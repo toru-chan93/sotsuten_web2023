@@ -3,48 +3,48 @@
 //////////
 
 console.log("Hello, World");
-console.log("Hello, Japan");
-console.log("Hello, EN");
 
-///////////////
-// hamburger //
-///////////////
+////////////////////
+// hamburger (sp) //
+///////////////////
 
 window.addEventListener("load", function () {
   const ham = document.getElementById("js-ham");
   const nav = document.getElementById("js-nav");
   if (!ham) {
-    console.log("!ham");
+    return false;
   }
 
+  // navigationの表示
   ham.addEventListener("click", function () {
-    console.log("OK");
-    console.log(window.pageYOffset);
-    console.log(window.outerHeight);
     nav.classList.toggle("js-nav__in");
   });
 });
 
-////////////
-// header //
-////////////
+/////////////////
+// header (pc) //
+////////////////
+
 const hed = document.getElementById("js-header");
 window.addEventListener("scroll", function () {
-  // メディアクエリ
+  // pcサイズならheader(pc)を表示
   if (window.matchMedia("(min-width: 768px)").matches) {
-    console.log("mq!");
-    // urlの取得
+    // topページか否かの確認
     let url = location.href;
     if (url == "http://localhost:8080/index.html") {
+      // topページのみ遅れてheader(pc)を表示
       if (window.pageYOffset > window.outerHeight - 100) {
         console.log("ヨイショ");
+        hed.classList.remove("js-fadeout");
         hed.classList.add("js-fadein");
+      } else {
+        hed.classList.remove("js-fadein");
+        hed.classList.add("js-fadeout");
       }
     } else {
       hed.classList.add("js-fadein");
     }
   } else {
-    console.log("mq?");
     return false;
   }
 });

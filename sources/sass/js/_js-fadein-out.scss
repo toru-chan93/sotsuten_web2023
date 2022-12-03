@@ -16,3 +16,20 @@
     opacity: 100;
   }
 }
+
+.js-fadeout {
+  animation-duration: 0.5s;
+  animation-name: header-fadeout;
+}
+
+@keyframes header-fadeout {
+  0% {
+    display: block;
+    opacity: 100;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}

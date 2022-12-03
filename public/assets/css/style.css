@@ -123,11 +123,6 @@ a :hover {
           justify-content: space-between;
   display: none;
 }
-@media screen and (min-width: 768px) {
-  .header-pc {
-    display: none;
-  }
-}
 .header-pc .header-pc__contents {
   width: calc((100% - 48px) / 2);
 }
@@ -215,6 +210,10 @@ a :hover {
 }
 .header-nav__button {
   margin: 0;
+  padding-bottom: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .header-nav__button img {
   height: 36px;
@@ -407,6 +406,9 @@ a :hover {
   .footer-right__contents ul {
     width: 13.75vw;
   }
+}
+.footer-right__contents ul li {
+  padding-bottom: 4px;
 }
 .footer-right__contents a {
   margin-bottom: 12px;
@@ -1008,6 +1010,312 @@ a :hover {
   }
 }
 
+.archive-main {
+  background-color: #f00;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 7.6923076923vw;
+  padding-right: 7.6923076923vw;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .archive-main {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .archive-main {
+    padding-left: 16.640625vw;
+    padding-right: 10.234375vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .archive-main {
+    height: auto;
+  }
+}
+.archive-main__title {
+  height: 29px;
+  margin-top: 96px;
+}
+@media screen and (min-width: 768px) {
+  .archive-main__title {
+    margin-top: 48px;
+  }
+}
+.archive-main__text {
+  padding-top: 48px;
+  width: 100%;
+  color: #fff;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .archive-main__text {
+    padding-top: 164px;
+    width: 33.28125vw;
+  }
+}
+.archive-main__hurt {
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 430px;
+  width: calc(100% - 36px);
+}
+@media screen and (min-width: 768px) {
+  .archive-main__hurt {
+    right: 9.6875vw;
+    top: 48px;
+    width: 32.5vw;
+  }
+}
+
+.year {
+  margin-bottom: 64px;
+  margin-top: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 7.6923076923vw;
+  padding-right: 7.6923076923vw;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .year {
+    padding-left: 16.640625vw;
+    padding-right: 10.234375vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .year {
+    margin-top: 48px;
+  }
+}
+
+.year-contents {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .year-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.year-contents__unit {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  margin-right: -7.6923076923vw;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .year-contents__unit {
+    margin: 0;
+    padding-bottom: 64px;
+    width: 32.5vw;
+  }
+}
+.year-contents__title {
+  width: 6.1538461538vw;
+}
+@media screen and (min-width: 768px) {
+  .year-contents__title {
+    width: 1.875vw;
+  }
+}
+.year-contents__img {
+  width: 69.4871794872vw;
+}
+@media screen and (min-width: 768px) {
+  .year-contents__img {
+    width: 25.625vw;
+  }
+}
+
+.news-main {
+  background-color: #f00;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 7.6923076923vw;
+  padding-right: 7.6923076923vw;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .news-main {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news-main {
+    padding-left: 16.640625vw;
+    padding-right: 10.234375vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news-main {
+    height: auto;
+  }
+}
+.news-main__title {
+  height: 42px;
+  margin-top: 96px;
+}
+@media screen and (min-width: 768px) {
+  .news-main__title {
+    margin-top: 48px;
+  }
+}
+.news-main__text {
+  padding-top: 48px;
+  width: 100%;
+  color: #fff;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .news-main__text {
+    padding-top: 164px;
+    width: 33.28125vw;
+  }
+}
+.news-main__hurt {
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 430px;
+  width: calc(100% - 36px);
+}
+@media screen and (min-width: 768px) {
+  .news-main__hurt {
+    right: 9.6875vw;
+    top: 48px;
+    width: 32.5vw;
+  }
+}
+
+.note {
+  margin-top: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 7.6923076923vw;
+  padding-right: 7.6923076923vw;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .note {
+    padding-left: 16.640625vw;
+    padding-right: 10.234375vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .note {
+    margin-top: 40px;
+  }
+}
+.note__title {
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .note__title {
+    padding-bottom: 64px;
+  }
+}
+
+.note-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.note-contents__unit {
+  padding-bottom: 48px;
+  text-decoration: none;
+  width: 38.9743589744vw;
+}
+@media screen and (min-width: 768px) {
+  .note-contents__unit {
+    padding-bottom: 64px;
+    width: 22.890625vw;
+  }
+}
+.note-contents__img {
+  padding-bottom: 12px;
+  width: 38.9743589744vw;
+}
+@media screen and (min-width: 768px) {
+  .note-contents__img {
+    width: 22.890625vw;
+  }
+}
+.note-contents__title {
+  margin: 0;
+  padding-bottom: 16px;
+  width: 38.9743589744vw;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .note-contents__title {
+    color: #f00;
+    font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    padding-bottom: 24px;
+    width: 22.890625vw;
+  }
+}
+.note-contents__time {
+  margin: 0;
+  color: #f00;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.note-contents__read {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.note-contents__read img {
+  height: 28px;
+}
+
 .caution-main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1607,145 +1915,6 @@ a :hover {
   }
 }
 
-.archive-main {
-  background-color: #f00;
-  height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 7.6923076923vw;
-  padding-right: 7.6923076923vw;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .archive-main {
-    padding-bottom: 80px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .archive-main {
-    padding-left: 16.640625vw;
-    padding-right: 10.234375vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .archive-main {
-    height: auto;
-  }
-}
-.archive-main__title {
-  height: 29px;
-  margin-top: 96px;
-}
-@media screen and (min-width: 768px) {
-  .archive-main__title {
-    margin-top: 48px;
-  }
-}
-.archive-main__text {
-  padding-top: 48px;
-  width: 100%;
-  color: #fff;
-  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.8;
-}
-@media screen and (min-width: 768px) {
-  .archive-main__text {
-    padding-top: 164px;
-    width: 33.28125vw;
-  }
-}
-.archive-main__hurt {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
-  mix-blend-mode: difference;
-  position: absolute;
-  top: 430px;
-  width: calc(100% - 36px);
-}
-@media screen and (min-width: 768px) {
-  .archive-main__hurt {
-    right: 9.6875vw;
-    top: 48px;
-    width: 32.5vw;
-  }
-}
-
-.year {
-  margin-bottom: 64px;
-  margin-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 7.6923076923vw;
-  padding-right: 7.6923076923vw;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .year {
-    padding-left: 16.640625vw;
-    padding-right: 10.234375vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .year {
-    margin-top: 48px;
-  }
-}
-
-.year-contents {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .year-contents {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-.year-contents__unit {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
-  margin-right: -7.6923076923vw;
-  padding-bottom: 48px;
-}
-@media screen and (min-width: 768px) {
-  .year-contents__unit {
-    margin: 0;
-    padding-bottom: 64px;
-    width: 32.5vw;
-  }
-}
-.year-contents__title {
-  width: 6.1538461538vw;
-}
-@media screen and (min-width: 768px) {
-  .year-contents__title {
-    width: 1.875vw;
-  }
-}
-.year-contents__img {
-  width: 69.4871794872vw;
-}
-@media screen and (min-width: 768px) {
-  .year-contents__img {
-    width: 25.625vw;
-  }
-}
-
 .js-nav__in {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
@@ -1796,5 +1965,33 @@ a :hover {
   }
   100% {
     opacity: 100;
+  }
+}
+.js-fadeout {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: header-fadeout;
+          animation-name: header-fadeout;
+}
+
+@-webkit-keyframes header-fadeout {
+  0% {
+    display: block;
+    opacity: 100;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes header-fadeout {
+  0% {
+    display: block;
+    opacity: 100;
+  }
+  100% {
+    display: none;
+    opacity: 0;
   }
 }

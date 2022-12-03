@@ -4,7 +4,7 @@
 .header-pc {
   @include mq(tb) {
     // display: block;
-    display: none;
+    // display: none;
 
     // opacity: 0;
   }

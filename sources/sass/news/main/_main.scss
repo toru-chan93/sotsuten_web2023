@@ -1,0 +1,46 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.news-main {
+  background-color: $color-main;
+  height: 100vh;
+  @include mq(tb) {
+    padding-bottom: $m-80;
+  }
+
+  @include content-width;
+  @include mq(tb) {
+    height: auto;
+  }
+
+  &__title {
+    height: 42px;
+    margin-top: $m-96;
+    @include mq(tb) {
+      margin-top: $m-48;
+    }
+  }
+
+  &__text {
+    padding-top: $m-48;
+    width: 100%;
+    @include text-style-body_white;
+    @include mq(tb) {
+      padding-top: 164px;
+      width: get-vw(426px, 1280px);
+    }
+  }
+
+  &__hurt {
+    filter: saturate(2);
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 430px;
+    width: calc(100% - 36px);
+    @include mq(tb) {
+      right: get-vw(124px, 1280px);
+      top: $m-48;
+      width: get-vw(416px, 1280px);
+    }
+  }
+}

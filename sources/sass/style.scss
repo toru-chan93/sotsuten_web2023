@@ -5,11 +5,14 @@
 // top
 @use "top";
 
-// caution
-@use "../sass/caution";
-
 // archive
 @use "../sass/archive";
+
+// news
+@use "../sass/news";
+
+// caution
+@use "../sass/caution";
 
 // js
 @use "../sass/js";

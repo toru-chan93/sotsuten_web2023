@@ -20,6 +20,15 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
   line-height: 1.8;
 }
 
+// red (sp)
+@mixin text-style-body_red-sp($text-style-important: false) {
+  color: cl.$color-main;
+  font-family: $font-family-default;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 // white
 @mixin text-style-body_white($text-style-important: false) {
   color: cl.$color-white;
@@ -45,6 +54,15 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
   font-size: 12px;
   font-weight: normal;
   line-height: 1.8;
+}
+
+// info
+@mixin text-style-info($text-style-important: false) {
+  color: cl.$color-main;
+  font-family: $font-family-default;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
 }
 
 // copy
