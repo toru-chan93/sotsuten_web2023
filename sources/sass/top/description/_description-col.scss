@@ -3,6 +3,7 @@
 
 .description-col {
   @include mq(tb) {
+    filter: saturate(2);
     padding-bottom: $m-48;
     padding-top: $m-48;
     @include col(2, $m-24, ".description-col__contents");

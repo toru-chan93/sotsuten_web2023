@@ -8,6 +8,7 @@
 
   &__hurt {
     @include mq(tb) {
+      filter: saturate(2);
       left: 36px;
     }
 

@@ -15,6 +15,7 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
 @mixin text-style-body_red($text-style-important: false) {
   color: cl.$color-main;
   font-family: $font-family-default;
+  font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.8;
@@ -24,6 +25,7 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
 @mixin text-style-body_red-sp($text-style-important: false) {
   color: cl.$color-main;
   font-family: $font-family-default;
+  font-feature-settings: "palt";
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
@@ -33,6 +35,7 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
 @mixin text-style-body_white($text-style-important: false) {
   color: cl.$color-white;
   font-family: $font-family-default;
+  font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.8;
@@ -51,6 +54,7 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
 @mixin text-style-caption($text-style-important: false) {
   color: cl.$color-main;
   font-family: $font-family-default;
+  font-feature-settings: "palt";
   font-size: 12px;
   font-weight: normal;
   line-height: 1.8;
@@ -60,6 +64,7 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
 @mixin text-style-info($text-style-important: false) {
   color: cl.$color-main;
   font-family: $font-family-default;
+  font-feature-settings: "palt";
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -69,6 +74,7 @@ $font-family-default: "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
 @mixin text-style-copy($text-style-important: false) {
   color: cl.$color-main;
   font-family: $font-family-default;
+  font-feature-settings: "palt";
   font-size: 11px;
   font-weight: bold;
   line-height: 1.2;

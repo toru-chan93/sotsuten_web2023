@@ -5,6 +5,7 @@
   background-color: $color-main;
   height: 100vh;
   @include mq(tb) {
+    filter: saturate(2);
     padding-bottom: $m-80;
   }
 

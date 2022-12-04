@@ -8,6 +8,7 @@
   position: fixed;
   z-index: 100;
   @include mq(tb) {
+    filter: saturate(2);
     margin-left: $m-32;
     width: min-content;
   }

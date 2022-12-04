@@ -23,9 +23,11 @@
     width: get-vw(314px, 390px);
 
     @include mq(tb) {
+      filter: saturate(2);
       left: get-vw(476px, 1280px);
       top: 120vh;
       width: get-vw(504px, 1280px);
+      z-index: 100;
     }
   }
 

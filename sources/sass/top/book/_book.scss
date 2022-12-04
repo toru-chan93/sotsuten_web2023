@@ -11,6 +11,7 @@
 
   @include mq(tb) {
     display: flex;
+    filter: saturate(2);
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: $m-48;

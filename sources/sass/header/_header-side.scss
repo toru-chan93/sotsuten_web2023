@@ -19,6 +19,7 @@
     animation: loop 20s 2s linear infinite;
     background-image: url(../img/common/header-info.svg);
     background-repeat: repeat-y;
+    filter: saturate(2);
     height: 100%;
     right: 32px;
     top: 0;
