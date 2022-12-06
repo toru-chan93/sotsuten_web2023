@@ -243,15 +243,15 @@ a :hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 56px;
+  margin-top: 32px;
 }
 .header-nav__title {
-  padding-bottom: 48px;
+  padding-bottom: 24px;
   width: 45.1282051282vw;
 }
 .header-nav__time {
   height: 25px;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 .header-nav__reserve {
   margin: 0;
@@ -867,7 +867,7 @@ a :hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 @media screen and (min-width: 768px) {
   .access-link {
@@ -885,12 +885,17 @@ a :hover {
   }
 }
 .access-link img {
-  height: 36px;
+  height: 32px;
   padding-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .access-link img {
+    height: 36px;
+  }
 }
 
 .access-text-block {
-  padding-top: 48px;
+  padding-top: 32px;
 }
 @media screen and (min-width: 768px) {
   .access-text-block {
@@ -992,7 +997,7 @@ a :hover {
 }
 .book-contents__canvas {
   background-color: #fff;
-  height: 80vw;
+  height: 71vw;
   margin-left: -7.9487179487vw;
   margin-right: -7.9487179487vw;
   margin-top: 48px;
