@@ -14,6 +14,7 @@ ul {
 body {
   background-color: white;
   margin: 0;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -1322,7 +1323,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 @media screen and (min-width: 768px) {
   .note-contents__title {
