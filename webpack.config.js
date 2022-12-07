@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.exports = {
+const script = {
   mode: "development",
   entry: "./sources/script/script.js",
   output: {
@@ -8,3 +8,16 @@ module.exports = {
     path: path.resolve(__dirname, "./public/assets/script"),
   },
 };
+
+const scroll = {
+  mode: "development",
+  entry: "./sources/script/scroll.js",
+  output: {
+    filename: "scroll.js",
+    path: path.resolve(__dirname, "./public/assets/script"),
+  },
+};
+
+module.exports = [
+  script, scroll
+];
