@@ -16,6 +16,7 @@
     @include mq(tb) {
       column-gap: $m-24;
       columns: 2;
+      margin-top: $m-32;
     }
   }
 }

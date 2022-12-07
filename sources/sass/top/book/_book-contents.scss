@@ -6,6 +6,7 @@
   flex-direction: column;
   @include mq(tb) {
     flex-direction: row;
+    height: inherit;
     justify-content: space-between;
   }
 

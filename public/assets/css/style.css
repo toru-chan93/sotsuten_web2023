@@ -974,6 +974,7 @@ a :hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: inherit;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1052,6 +1053,7 @@ a :hover {
     -webkit-columns: 2;
        -moz-columns: 2;
             columns: 2;
+    margin-top: 32px;
   }
 }
 
