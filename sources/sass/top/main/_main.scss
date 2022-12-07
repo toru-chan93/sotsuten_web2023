@@ -13,7 +13,7 @@
 
   &__hurt {
     filter: saturate(2);
-    margin-top: -40px;
+    margin-top: -70px;
     mix-blend-mode: difference;
     width: 100%;
 
@@ -24,21 +24,27 @@
   }
 
   &__reserve {
+    align-items: flex-end;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     padding-right: get-vw(30px, 390px);
     padding-top: $m-24;
 
     @include mq(tb) {
+      align-items: flex-start;
       bottom: 64px;
-      display: block;
       padding: 0;
       position: absolute;
       right: get-vw(124px, 1280px);
     }
+  }
 
-    img {
-      height: 44px;
-    }
+  &__time {
+    height: 25px;
+  }
+
+  &__button {
+    height: 44px;
   }
 }

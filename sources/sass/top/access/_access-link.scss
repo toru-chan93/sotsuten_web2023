@@ -13,7 +13,7 @@
   }
 
   img {
-    height: $m-32;
+    height: 40px;
     padding-top: 16px;
     @include mq(tb) {
       height: 36px;
