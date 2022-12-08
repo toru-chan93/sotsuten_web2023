@@ -30,7 +30,7 @@
     width: get-vw(152px, 390px);
     @include text-style-body_red-sp;
     @include mq(tb) {
-      @include text-style-body_red;
+      @include text-style-page-title;
 
       padding-bottom: $m-24;
       width: get-vw(293px, 1280px);

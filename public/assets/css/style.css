@@ -1207,11 +1207,11 @@ a :hover {
   }
 }
 .year-contents__title {
-  width: 6.1538461538vw;
+  width: 9.7435897436vw;
 }
 @media screen and (min-width: 768px) {
   .year-contents__title {
-    width: 1.875vw;
+    width: 2.96875vw;
   }
 }
 .year-contents__img {
@@ -1366,11 +1366,9 @@ a :hover {
   .note-contents__title {
     color: #f00;
     font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-    -webkit-font-feature-settings: "palt";
-            font-feature-settings: "palt";
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 1.6;
     padding-bottom: 24px;
     width: 22.890625vw;
   }

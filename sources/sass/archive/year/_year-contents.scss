@@ -25,9 +25,9 @@
   }
 
   &__title {
-    width: get-vw(24px, 390px);
+    width: get-vw(38px, 390px);
     @include mq(tb) {
-      width: get-vw(24px, 1280px);
+      width: get-vw(38px, 1280px);
     }
   }
 
