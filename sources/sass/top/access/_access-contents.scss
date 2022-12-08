@@ -8,10 +8,12 @@
   }
 
   &__map {
-    border: 1.5px solid $color-main;
-    margin-left: get-vw(-31px, 390px);
-    margin-right: get-vw(-31px, 390px);
+    border-bottom: 1.5px solid $color-main;
+    border-top: 1.5px solid $color-main;
+    margin-left: get-vw(-30.8px, 390px);
+    margin-right: get-vw(-30.8px, 390px);
     @include mq(tb) {
+      border: 1.5px solid $color-main;
       margin: 0;
       width: calc((100% - 24px) / 11 * 8);
     }

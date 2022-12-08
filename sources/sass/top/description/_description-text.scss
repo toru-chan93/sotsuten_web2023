@@ -9,5 +9,11 @@
     @include text-style-body_white;
 
     margin: 0;
+
+    img {
+      height: 14px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
   }
 }
