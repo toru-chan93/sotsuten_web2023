@@ -1,0 +1,15 @@
+@use "../sass/config/import" as *;
+@use "sass:math";
+
+.filter {
+  display: none;
+  @include mq(tb) {
+    background-color: #ffffff2e;
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+  }
+}

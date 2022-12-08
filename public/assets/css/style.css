@@ -77,7 +77,7 @@ a :hover {
     -webkit-filter: saturate(2);
             filter: saturate(2);
     height: 100%;
-    right: 32px;
+    right: 24px;
     top: 0;
     width: 18px;
   }
@@ -424,6 +424,21 @@ a :hover {
 }
 .footer-right__contents img {
   height: 28px;
+}
+
+.filter {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    background-color: rgba(255, 255, 255, 0.1803921569);
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+  }
 }
 
 .main {
