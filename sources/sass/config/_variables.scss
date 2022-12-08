@@ -63,6 +63,9 @@ $mq-breakpoints: (
 ///////////////////
 // cssの処理の制御 //
 ///////////////////
+html {
+  overflow-x: hidden;
+}
 
 li {
   list-style: none;

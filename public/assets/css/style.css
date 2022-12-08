@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import "http://fonts.googleapis.com/earlyaccess/notosansjp.css";
+html {
+  overflow-x: hidden;
+}
+
 li {
   list-style: none;
   text-decoration: none;
