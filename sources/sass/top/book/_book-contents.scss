@@ -11,9 +11,11 @@
   }
 
   &__text {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     @include mq(tb) {
+      align-items: flex-start;
       flex-direction: column;
       justify-content: normal;
       width: calc((100% - 24px) / 11 * 2);
@@ -25,11 +27,22 @@
   }
 
   &__link {
-    padding-top: $m-48;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
 
-    img {
-      height: 44px;
+    @include mq(tb) {
+      align-items: flex-start;
+      padding-top: $m-72;
     }
+  }
+
+  &__reserve {
+    height: 44px;
+  }
+
+  &__time {
+    height: 18px;
   }
 
   &__canvas {

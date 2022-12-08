@@ -1008,6 +1008,9 @@ a :hover {
   }
 }
 .book-contents__text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1017,6 +1020,9 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .book-contents__text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1031,10 +1037,30 @@ a :hover {
   width: 64px;
 }
 .book-contents__link {
-  padding-top: 48px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.book-contents__link img {
+@media screen and (min-width: 768px) {
+  .book-contents__link {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 72px;
+  }
+}
+.book-contents__reserve {
   height: 44px;
+}
+.book-contents__time {
+  height: 18px;
 }
 .book-contents__canvas {
   background-color: #fff;
