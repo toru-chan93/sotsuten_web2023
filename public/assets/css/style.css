@@ -504,6 +504,7 @@ a :hover {
 }
 .main__time {
   height: 25px;
+  padding-right: 2px;
 }
 .main__button {
   height: 44px;
