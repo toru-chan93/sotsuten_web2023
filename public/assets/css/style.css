@@ -399,6 +399,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 11px;
   font-weight: bold;
+  letter-spacing: 0.01rem;
   line-height: 1.2;
 }
 @media screen and (min-width: 768px) {
@@ -523,6 +524,7 @@ a :hover {
   font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 24px;
   font-weight: bold;
+  letter-spacing: 0.08rem;
   line-height: 1.3;
   padding-top: 16px;
 }
@@ -533,6 +535,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -542,6 +545,7 @@ a :hover {
   font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 24px;
   font-weight: bold;
+  letter-spacing: 0.08rem;
   line-height: 1.3;
 }
 .top-description__body {
@@ -551,6 +555,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
   padding-top: 16px;
 }
@@ -696,6 +701,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
   margin: 0;
 }
@@ -859,6 +865,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
   padding-left: 16px;
 }
@@ -885,6 +892,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
   margin-bottom: 0;
   margin-top: 24px;
@@ -1095,6 +1103,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
   margin: 0;
 }
@@ -1155,6 +1164,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
@@ -1298,6 +1308,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
@@ -1390,6 +1401,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 0.07rem;
   line-height: 1.6;
 }
 @media screen and (min-width: 768px) {
@@ -1398,6 +1410,7 @@ a :hover {
     font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
     font-size: 16px;
     font-weight: 500;
+    letter-spacing: 0.05rem;
     line-height: 1.6;
     padding-bottom: 24px;
     width: 22.890625vw;
@@ -1411,6 +1424,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 12px;
   font-weight: normal;
+  letter-spacing: 0.08rem;
   line-height: 1.4;
 }
 .note-contents__read {
@@ -1465,6 +1479,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
@@ -1531,6 +1546,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
   padding-top: 32px;
   width: 100%;
@@ -1613,6 +1629,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 
@@ -1728,6 +1745,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 
@@ -1790,6 +1808,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
@@ -1851,6 +1870,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 
@@ -1903,6 +1923,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 
@@ -2030,6 +2051,7 @@ a :hover {
           font-feature-settings: "palt";
   font-size: 12px;
   font-weight: normal;
+  letter-spacing: 0.08rem;
   line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
@@ -2040,6 +2062,7 @@ a :hover {
             font-feature-settings: "palt";
     font-size: 16px;
     font-weight: 500;
+    letter-spacing: 0.08rem;
     line-height: 1.8;
     font-size: 16px;
   }
