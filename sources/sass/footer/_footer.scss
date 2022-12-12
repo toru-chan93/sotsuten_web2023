@@ -7,6 +7,7 @@
   @include content-width;
 
   &__hurt {
+    display: none;
     @include mq(tb) {
       filter: saturate(2);
       left: 36px;

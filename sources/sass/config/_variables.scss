@@ -90,7 +90,11 @@ body {
 }
 
 #defaultCanvas0 {
-  display: none;
+  //display: none;
+  position: fixed;
+  top: 0;
+  mix-blend-mode: difference;
+  pointer-events: none;
 }
 
 a :hover {
