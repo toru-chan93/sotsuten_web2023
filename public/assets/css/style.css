@@ -32,7 +32,10 @@ body {
 }
 
 #defaultCanvas0 {
-  display: none;
+  position: fixed;
+  top: 0;
+  mix-blend-mode: difference;
+  pointer-events: none;
 }
 
 a :hover {
@@ -281,6 +284,7 @@ a :hover {
   }
 }
 .footer__hurt {
+  display: none;
   bottom: -340vh;
   height: 290px;
   left: 0;
@@ -465,6 +469,7 @@ a :hover {
   }
 }
 .main__hurt {
+  display: none;
   -webkit-filter: saturate(2);
           filter: saturate(2);
   margin-top: -70px;
@@ -492,7 +497,7 @@ a :hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 7.6923076923vw;
-  padding-top: 24px;
+  padding-top: 344px;
 }
 @media screen and (min-width: 768px) {
   .main__reserve {
@@ -595,6 +600,7 @@ a :hover {
   }
 }
 .description__hurt {
+  display: none;
   -webkit-filter: saturate(2);
           filter: saturate(2);
   left: 9.7435897436vw;
@@ -768,6 +774,12 @@ a :hover {
 }
 .access-contents__map img {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .access-contents__map img {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
+  }
 }
 .access-contents__title {
   display: none;
@@ -1912,9 +1924,6 @@ a :hover {
   }
 }
 .visitor-explain-ex__text {
-  margin: 0;
-  margin-top: -5px;
-  padding-bottom: 16px;
   color: #f00;
   font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
@@ -1923,6 +1932,10 @@ a :hover {
   font-weight: 500;
   letter-spacing: 0.08rem;
   line-height: 1.8;
+  font-size: 18px;
+  margin: 0;
+  margin-top: -5px;
+  padding-bottom: 16px;
 }
 
 .visitor-explain-img {
@@ -2144,5 +2157,11 @@ a :hover {
   100% {
     display: none;
     opacity: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p5Canvas {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
   }
 }

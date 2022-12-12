@@ -169,7 +169,7 @@
   </div>
 </nav>
  <div class="header-side"></div>
- <section class="main">
+ <section class="main js-section">
   <img class="main__hurt" src="assets/img/hurt.svg" alt="ハート" />
   <div class="main__reserve">
     <img
@@ -185,7 +185,7 @@
   </div>
 </section>
     <img class="description__hurt" src="assets/img/hurt.svg" />
-<section class="description description-col">
+<section class="description description-col js-section">
   <div class="description-title description-col__contents">
   <img
     class="description-title__img"
@@ -207,7 +207,7 @@
   </p>
 </div>
 </section>
-    <section class="access">
+    <section class="access js-section">
   <div class="access-contents">
   <div class="access-contents__map">
     <img src="assets/img/top-access_map.jpg" alt="卒展会場の地図" />
@@ -256,7 +256,7 @@
 </div>
 </div>
 </section>
- <section class="book">
+ <section class="book js-section">
   <div class="book-contents">
     <div class="book-contents__text">
       <img src="assets/img/top-book_title.svg" class="book-contents__title" />
@@ -265,7 +265,7 @@
         <img class="book-contents__reserve" src="assets/img/top-book_link.svg" alt="図録の購入予約"/>
       </a>
     </div>
-    <canvas class="book-contents__canvas"></canvas>
+    <canvas class="book-contents__canvas" id="myCanvas"></canvas>
   </div>
   <div class="book-text">
     <p>
@@ -274,7 +274,7 @@
     </p>
   </div>
 </section>
-    <footer class="footer">
+    <footer class="footer js-section">
   <img src="assets/img/hurt.svg" alt="ハート" class="footer__hurt" />
   <div class="footer-left">
   <img
@@ -353,5 +353,8 @@
 </div>
 </footer>
 <script src="./assets/script/script.js"></script>
+<script src="./assets/script/scroll.js"></script>
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js" defer></script>
+<!-- <script src="./assets/script/three_script.js"></script> -->
   </body>
 </html>
