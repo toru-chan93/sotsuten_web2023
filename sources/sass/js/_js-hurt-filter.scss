@@ -1,0 +1,8 @@
+@use "../config/import" as *;
+@use "sass:math";
+
+.p5Canvas {
+  @include mq(tb) {
+    filter: saturate(2);
+  }
+}

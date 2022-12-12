@@ -31,10 +31,11 @@
   }
 
   &__text {
+    @include text-style-body_red;
+
+    font-size: 18px;
     margin: 0;
     margin-top: -5px;
     padding-bottom: $m-16;
-
-    @include text-style-body_red;
   }
 }

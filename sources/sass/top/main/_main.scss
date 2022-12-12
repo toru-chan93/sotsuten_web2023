@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-right: get-vw(30px, 390px);
-    padding-top: $m-24;
+    padding-top: 344px;
 
     @include mq(tb) {
       align-items: flex-start;
