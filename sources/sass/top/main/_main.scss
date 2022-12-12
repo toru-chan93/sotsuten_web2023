@@ -12,6 +12,7 @@
   }
 
   &__hurt {
+    display: none;
     filter: saturate(2);
     margin-top: -70px;
     mix-blend-mode: difference;

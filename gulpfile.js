@@ -91,12 +91,12 @@ gulp.task("reload", (done) => {
 });
 
 // build, watch
-gulp.task("build", gulp.series("sass", "ejs", "webpack", "img")); //構築の際に行うことを記述
+gulp.task("build", gulp.series("sass", "ejs", "img")); //構築の際に行うことを記述
 
 gulp.task("watch", (done) => {
   gulp.watch(["./sources/sass/**/*.scss"], gulp.series("sass", "reload"));
   gulp.watch(["./sources/ejs/**/*.ejs"], gulp.series("ejs", "reload"));
-  gulp.watch(["./sources/script/**/*.js"], gulp.series("webpack", "reload"));
+  //gulp.watch(["./sources/script/**/*.js"], gulp.series("webpack", "reload"));
   gulp.watch(
     ["./sources/img/*.{jpg,png,svg,gif}", "./sources/img/**/*"],
     gulp.series("img", "reload")

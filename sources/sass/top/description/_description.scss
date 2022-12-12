@@ -15,6 +15,7 @@
   justify-content: space-between;
 
   &__hurt {
+    display: none;
     filter: saturate(2);
     left: get-vw(38px, 390px);
     mix-blend-mode: difference;
