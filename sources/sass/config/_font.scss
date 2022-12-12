@@ -5,8 +5,12 @@
 // Noto Sans JP
 @import "http://fonts.googleapis.com/earlyaccess/notosansjp.css";
 
-$font-family-default: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP",
-  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+$font-family-default: mono45-headline, a-otf-midashi-go-mb31-pr6n,
+  a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
+  "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+$font-family-no-englsh: a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n,
+  "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+  "メイリオ", sans-serif;
 
 // typographyの設定は下記に記述
 // body
@@ -22,10 +26,21 @@ $font-family-default: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP",
   line-height: 1.8;
 }
 
+// no-english font
+@mixin text-style-body_red-02($text-style-important: false) {
+  color: cl.$color-main;
+  font-family: $font-family-no-englsh;
+  font-feature-settings: "palt";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  line-height: 1.6;
+}
+
 // red (sp)
 @mixin text-style-body_red-sp($text-style-important: false) {
   color: cl.$color-main;
-  font-family: $font-family-default;
+  font-family: $font-family-no-englsh;
   font-feature-settings: "palt";
   font-size: 14px;
   font-weight: 500;
@@ -57,7 +72,7 @@ $font-family-default: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP",
 // page-title
 @mixin text-style-page-title($text-style-important: false) {
   color: cl.$color-main;
-  font-family: $font-family-default;
+  font-family: $font-family-no-englsh;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.05rem;

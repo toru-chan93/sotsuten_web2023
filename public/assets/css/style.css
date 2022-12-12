@@ -304,9 +304,9 @@ a :hover {
 }
 
 .footer-left {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +327,7 @@ a :hover {
 }
 .footer-left__title {
   padding-bottom: 32px;
-  width: 56.9230769231vw;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer-left__title {
@@ -337,7 +337,6 @@ a :hover {
 }
 .footer-left__time {
   height: 18px;
-  margin-left: -24px;
 }
 @media screen and (min-width: 768px) {
   .footer-left__time {
@@ -362,7 +361,6 @@ a :hover {
 }
 .footer-left__link img {
   height: 100%;
-  margin-left: -24px;
 }
 @media screen and (min-width: 768px) {
   .footer-left__link img {
@@ -394,7 +392,7 @@ a :hover {
   color: #0ff;
   margin-top: 48px;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 11px;
@@ -521,7 +519,7 @@ a :hover {
 }
 .top-description__section {
   color: #0ff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 0.08rem;
@@ -530,7 +528,7 @@ a :hover {
 }
 .top-description__contents {
   color: #fff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -542,7 +540,7 @@ a :hover {
 }
 .top-description__title {
   color: #0ff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 0.08rem;
@@ -550,7 +548,7 @@ a :hover {
 }
 .top-description__body {
   color: #fff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -696,7 +694,7 @@ a :hover {
 }
 .description-text p {
   color: #fff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -860,13 +858,13 @@ a :hover {
 }
 .access-info__event ul li {
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.08rem;
-  line-height: 1.8;
+  line-height: 1.6;
   padding-left: 16px;
 }
 .access-info__sub-title {
@@ -887,7 +885,7 @@ a :hover {
 }
 .access-info__description p {
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1098,7 +1096,7 @@ a :hover {
 }
 .book-text p {
   color: #fff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1159,7 +1157,7 @@ a :hover {
   padding-top: 48px;
   width: 100%;
   color: #fff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1303,7 +1301,7 @@ a :hover {
   padding-top: 48px;
   width: 100%;
   color: #fff;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1396,7 +1394,7 @@ a :hover {
   padding-bottom: 16px;
   width: 38.9743589744vw;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 14px;
@@ -1407,7 +1405,7 @@ a :hover {
 @media screen and (min-width: 768px) {
   .note-contents__title {
     color: #f00;
-    font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    font-family: a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.05rem;
@@ -1419,7 +1417,7 @@ a :hover {
 .note-contents__time {
   margin: 0;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 12px;
@@ -1474,7 +1472,7 @@ a :hover {
   padding-top: 48px;
   width: 100%;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1541,7 +1539,7 @@ a :hover {
 }
 .staff-contents__text {
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1624,7 +1622,7 @@ a :hover {
 }
 .staff-img__caption {
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1740,7 +1738,7 @@ a :hover {
   margin-top: -5px;
   padding-bottom: 16px;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1803,7 +1801,7 @@ a :hover {
   margin-top: -5px;
   padding-bottom: 16px;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1865,7 +1863,7 @@ a :hover {
   margin-top: -5px;
   padding-bottom: 16px;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -1918,7 +1916,7 @@ a :hover {
   margin-top: -5px;
   padding-bottom: 16px;
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 16px;
@@ -2046,7 +2044,7 @@ a :hover {
 }
 .visitor-explain-img__caption {
   color: #f00;
-  font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-size: 12px;
@@ -2057,7 +2055,7 @@ a :hover {
 @media screen and (min-width: 768px) {
   .visitor-explain-img__caption {
     color: #f00;
-    font-family: mono45-headline, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
     -webkit-font-feature-settings: "palt";
             font-feature-settings: "palt";
     font-size: 16px;
