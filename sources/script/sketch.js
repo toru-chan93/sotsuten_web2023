@@ -27,7 +27,8 @@ export const sketch = (p) => {
   });
 
   p.windowResized = () => { // ウィンドウがリサイズされるたびにこの関数が自動的に実行される
-    p.resizeCanvas(p.windowWidth, p.windowHeight); // キャンバスをリサイズする（createCanvasではないので注意）
+    let main = document.querySelector(".main")
+    p.resizeCanvas(document.body.clientWidth, main.clientHeight); // キャンバスをリサイズする（createCanvasではないので注意）
     sectionTargetValueSetting();
     hartPropSetting();
     scrollApply();
@@ -38,10 +39,15 @@ export const sketch = (p) => {
   }
 
   p.setup = () => {
-    p.createCanvas(p.windowWidth, p.windowHeight);
+    let main = document.querySelector(".main")
+    p.createCanvas(document.body.clientWidth, main.clientHeight);
     sectionHartAnimationSetting();
     sectionTargetValueSetting();
-    hartPropSetting();
+    
+    hart_now_prop = {
+      scale: 0,
+      transform: {x: section_transform[selector].x, y: section_transform[selector].y}
+    };
 
     e_scroll_scale = new neko.Tween(hart_now_prop.scale);
     e_scroll_transform.x = new neko.Tween(hart_now_prop.transform.x);
@@ -110,15 +116,15 @@ export const sketch = (p) => {
     e_animation_scale.cancel();
     if (selector == 2) {
       e_scroll_scale = new neko.Tween(hart_now_prop.scale);
-      e_scroll_scale.eventPush(hart_now_prop.scale, section_scale[selector], 400, neko.Easing.easeOutQuint);
+      e_scroll_scale.eventPush(hart_now_prop.scale, section_scale[selector], 600, neko.Easing.easeOutQuint);
       e_scroll_scale.execute();
 
       e_scroll_transform.x = new neko.Tween(hart_now_prop.transform.x);
-      e_scroll_transform.x.eventPush(hart_now_prop.transform.x, section_transform[selector].x, 400, neko.Easing.easeOutQuint);
+      e_scroll_transform.x.eventPush(hart_now_prop.transform.x, section_transform[selector].x, 600, neko.Easing.easeOutQuint);
       e_scroll_transform.x.execute();
 
       e_scroll_transform.y = new neko.Tween(hart_now_prop.transform.y);
-      e_scroll_transform.y.eventPush(hart_now_prop.transform.y, section_transform[selector].y, 400, neko.Easing.easeOutQuint);
+      e_scroll_transform.y.eventPush(hart_now_prop.transform.y, section_transform[selector].y, 600, neko.Easing.easeOutQuint);
       e_scroll_transform.y.execute();
     } else {
       e_scroll_scale = new neko.Tween(hart_now_prop.scale);
@@ -138,20 +144,22 @@ export const sketch = (p) => {
 
   function sectionTargetValueSetting() {
     let map = document.querySelector(".access-contents__map");
+    let access = document.querySelector(".access")
     let footer = document.querySelector(".footer");
 
     if (p.width > p.height) {
       section_real_scale = [p.height, p.height, map.clientWidth, p.height, footer.clientHeight * 2];
+      section_scale = [0.995, 0.6, 0.21, 0, 0.47]
     } else {
       section_real_scale = [p.width, p.width, map.clientWidth, p.width, footer.clientHeight * 2];
+      section_scale = [0.995, 0.6, 0.21, 0, 0]
     }
-    section_scale = [0.995, 0.6, 0.21, 0, 0.47]
     section_transform = [
       {x: p.width / 2, y: p.height / 2},
       {x: p.width / 2 + p.width * 0.05, y: p.height / 2 - p.height * 0.07},
       {
         x: map.getBoundingClientRect().left + map.clientWidth * 0.7815,
-        y: (map.getBoundingClientRect().top + window.pageYOffset) - window.innerHeight * 2 + map.clientWidth * 0.236
+        y: (map.getBoundingClientRect().top + window.pageYOffset) - access.clientHeight * 2 + map.clientWidth * 0.236
       },
       {x: p.width / 2, y: p.height / 2},
       {
