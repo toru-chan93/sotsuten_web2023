@@ -68,7 +68,7 @@ a :hover {
   background-repeat: repeat-x;
   background-size: auto 100%;
   bottom: 16px;
-  height: 18px;
+  height: 28px;
   mix-blend-mode: difference;
   position: fixed;
   right: 0;
@@ -86,7 +86,7 @@ a :hover {
     height: 100%;
     right: 24px;
     top: 0;
-    width: 18px;
+    width: 22px;
   }
 }
 
@@ -284,8 +284,8 @@ a :hover {
   }
 }
 .footer__hurt {
-  display: none;
   bottom: -340vh;
+  display: none;
   height: 290px;
   left: 0;
   mix-blend-mode: difference;
@@ -293,6 +293,29 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .footer__hurt {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
+    left: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+}
+.footer__hurt-02 {
+  display: none;
+  height: 240px;
+  left: 0;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .footer__hurt-02 {
+    display: block;
     -webkit-filter: saturate(2);
             filter: saturate(2);
     left: 36px;
@@ -322,7 +345,9 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .footer-left {
-    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: calc((100% - 24px) / 11 * 2 + 24px);
     padding-bottom: 32px;
     padding-top: 32px;
@@ -407,6 +432,7 @@ a :hover {
 @media screen and (min-width: 768px) {
   .footer-right p {
     margin: 0;
+    padding-top: 16px;
   }
 }
 .footer-right__contents {
@@ -515,7 +541,7 @@ a :hover {
   padding-right: 2px;
 }
 .main__button {
-  height: 44px;
+  height: 69px;
   padding-right: 2px;
 }
 
@@ -1156,6 +1182,29 @@ a :hover {
     height: auto;
   }
 }
+.archive-main__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .archive-main__col {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .archive-main__title {
   height: 29px;
   margin-top: 96px;
@@ -1179,22 +1228,18 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .archive-main__text {
+    margin: 0;
     padding-top: 164px;
     width: 33.28125vw;
   }
 }
 .archive-main__hurt {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
-  mix-blend-mode: difference;
-  position: absolute;
-  top: 430px;
-  width: calc(100% - 36px);
+  margin-top: 58px;
+  width: calc(118% - 36px);
 }
 @media screen and (min-width: 768px) {
   .archive-main__hurt {
-    right: 9.6875vw;
-    top: 48px;
+    margin-top: -32px;
     width: 32.5vw;
   }
 }
@@ -1309,6 +1354,29 @@ a :hover {
     margin-top: 48px;
   }
 }
+.news-main__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .news-main__col {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .news-main__text {
   padding-top: 48px;
   width: 100%;
@@ -1323,22 +1391,18 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .news-main__text {
+    margin: 0;
     padding-top: 164px;
     width: 33.28125vw;
   }
 }
 .news-main__hurt {
-  -webkit-filter: saturate(2);
-          filter: saturate(2);
-  mix-blend-mode: difference;
-  position: absolute;
-  top: 430px;
-  width: calc(100% - 36px);
+  margin-top: 58px;
+  width: calc(118% - 36px);
 }
 @media screen and (min-width: 768px) {
   .news-main__hurt {
-    right: 9.6875vw;
-    top: 48px;
+    margin-top: -34px;
     width: 32.5vw;
   }
 }
@@ -1480,6 +1544,29 @@ a :hover {
     margin-top: 44px;
   }
 }
+.caution-main__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .caution-main__col {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .caution-main__text {
   padding-top: 48px;
   width: 100%;
@@ -1494,6 +1581,7 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .caution-main__text {
+    margin: 0;
     padding-top: 164px;
     width: 33.28125vw;
   }
@@ -1501,15 +1589,13 @@ a :hover {
 .caution-main__hurt {
   -webkit-filter: saturate(2);
           filter: saturate(2);
+  margin-top: 58px;
   mix-blend-mode: difference;
-  position: absolute;
-  top: 430px;
-  width: calc(100% - 36px);
+  width: calc(118% - 36px);
 }
 @media screen and (min-width: 768px) {
   .caution-main__hurt {
-    right: 9.6875vw;
-    top: 48px;
+    margin-top: -112px;
     width: 32.5vw;
   }
 }
