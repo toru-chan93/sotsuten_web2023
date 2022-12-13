@@ -7,17 +7,34 @@
   @include content-width;
 
   &__hurt {
-    display: none;
-    @include mq(tb) {
-      filter: saturate(2);
-      left: 36px;
-    }
-
     bottom: -340vh;
+    display: none;
     height: 290px;
     left: 0;
     mix-blend-mode: difference;
     position: absolute;
+    @include mq(tb) {
+      filter: saturate(2);
+      left: 36px;
+    }
+  }
+
+  @include mq(tb) {
+    display: flex;
+    height: auto;
+  }
+
+  &__hurt-02 {
+    display: none;
+    height: 240px;
+    left: 0;
+    mix-blend-mode: difference;
+    position: absolute;
+    @include mq(tb) {
+      display: block;
+      filter: saturate(2);
+      left: 36px;
+    }
   }
 
   @include mq(tb) {

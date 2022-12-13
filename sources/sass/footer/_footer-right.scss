@@ -19,6 +19,7 @@
 
     @include mq(tb) {
       margin: 0;
+      padding-top: $m-16;
     }
   }
 

@@ -8,7 +8,7 @@
   padding-top: 160px;
 
   @include mq(tb) {
-    display: block;
+    justify-content: space-between;
     margin-left: calc((100% - 24px) / 11 * 2 + 24px);
     padding-bottom: 32px;
     padding-top: 32px;
