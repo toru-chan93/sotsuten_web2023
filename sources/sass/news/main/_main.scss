@@ -22,25 +22,33 @@
     }
   }
 
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mq(tb) {
+      align-items: flex-end;
+      flex-direction: row;
+    }
+  }
+
   &__text {
     padding-top: $m-48;
     width: 100%;
     @include text-style-body_white;
     @include mq(tb) {
+      margin: 0;
       padding-top: 164px;
       width: get-vw(426px, 1280px);
     }
   }
 
   &__hurt {
-    filter: saturate(2);
-    mix-blend-mode: difference;
-    position: absolute;
-    top: 430px;
-    width: calc(100% - 36px);
+    margin-top: 58px;
+    width: calc(118% - 36px);
     @include mq(tb) {
-      right: get-vw(124px, 1280px);
-      top: $m-48;
+      margin-top: -34px;
       width: get-vw(416px, 1280px);
     }
   }
