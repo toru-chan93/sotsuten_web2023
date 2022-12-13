@@ -6,7 +6,6 @@
   @include mq(tb) {
     margin-left: calc((100% - 24px) / 11 * 2 + 24px);
     margin-top: 0;
-    width: calc((100% - 24px) / 11 * 6);
   }
 
   p {
