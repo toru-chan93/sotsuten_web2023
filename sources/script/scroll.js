@@ -7,6 +7,22 @@ let start_pos_y;
 let target_pos_y;
 let event_scale;
 
+const ua = window.navigator.userAgent.toLowerCase();
+console.log(ua);
+if (selector != undefined && ua.indexOf("mac os x") !== -1) {
+  //document.addEventListener('touchmove', scrollSetting, { passive: false });
+document.addEventListener('wheel', scrollSetting, { passive: false });
+}
+
+function scrollSetting(e) {
+  e.preventDefault();
+  window.scrollBy(e.deltaX, e.deltaY / 4);
+}
+
+function NoScroll(event) {
+  event.preventDefault();
+}
+
 window.addEventListener('DOMContentLoaded', function(){
   //Intersection Observer
   const sections = document.querySelectorAll(".js-section");
@@ -35,7 +51,11 @@ window.addEventListener('DOMContentLoaded', function(){
         console.log(entry.target);
         start_pos_y = window.scrollY;
         target_pos_y = entry.target.offsetTop;
-        requestAnimationFrame(loop);
+        //document.removeEventListener('touchmove', scrollSetting, { passive: false });
+        document.removeEventListener('wheel', scrollSetting, { passive: false });
+        document.addEventListener('touchmove', NoScroll, { passive: false });
+        document.addEventListener('wheel', NoScroll, { passive: false });
+        loop();
       }
     });
   }
@@ -43,11 +63,17 @@ window.addEventListener('DOMContentLoaded', function(){
 });
 
 function loop() {
-  const ease = neko.Easing.easeOutQuart(timer.getProgress())
+  const ease = neko.Easing.easeOutQuart(timer.getProgress());
   const distance = start_pos_y - target_pos_y;
   //console.log(target_pos_y)
   window.scrollTo(0, start_pos_y + distance * -ease);
-  if(timer.getProgress() < 1) {
+  //document.body.style.position = 'fixed';
+  if(timer.getCompleat()) {
+    //document.addEventListener('touchmove', scrollSetting, { passive: false });
+    if (selector != 0 && ua.indexOf("mac os x") !== -1) document.addEventListener('wheel', scrollSetting, { passive: false });
+    document.removeEventListener('touchmove', NoScroll, { passive: false });
+    document.removeEventListener('wheel', NoScroll, { passive: false });
+  } else {
     requestAnimationFrame(loop);
   }
 }
