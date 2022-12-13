@@ -523,7 +523,7 @@ a :hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 7.6923076923vw;
-  padding-top: 344px;
+  padding-top: 404px;
 }
 @media screen and (min-width: 768px) {
   .main__reserve {
@@ -1234,7 +1234,7 @@ a :hover {
 }
 .archive-main__hurt {
   margin-top: 58px;
-  width: calc(118% - 36px);
+  width: calc(108% - 36px);
 }
 @media screen and (min-width: 768px) {
   .archive-main__hurt {
@@ -1397,7 +1397,7 @@ a :hover {
 }
 .news-main__hurt {
   margin-top: 58px;
-  width: calc(118% - 36px);
+  width: calc(108% - 36px);
 }
 @media screen and (min-width: 768px) {
   .news-main__hurt {
@@ -1590,7 +1590,7 @@ a :hover {
           filter: saturate(2);
   margin-top: 58px;
   mix-blend-mode: difference;
-  width: calc(118% - 36px);
+  width: calc(108% - 36px);
 }
 @media screen and (min-width: 768px) {
   .caution-main__hurt {

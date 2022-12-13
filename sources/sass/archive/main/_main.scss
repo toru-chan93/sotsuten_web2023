@@ -46,7 +46,7 @@
 
   &__hurt {
     margin-top: 58px;
-    width: calc(118% - 36px);
+    width: calc(108% - 36px);
     @include mq(tb) {
       margin-top: -32px;
       width: get-vw(416px, 1280px);
