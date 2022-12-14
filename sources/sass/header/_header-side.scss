@@ -25,6 +25,10 @@
     top: 0;
     width: 22px;
   }
+  @media screen and (max-width: 375px) {
+    bottom: 14px;
+    height: 22px;
+  }
 }
 
 @include mq(tb) {

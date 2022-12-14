@@ -39,6 +39,10 @@
       position: absolute;
       right: get-vw(124px, 1280px);
     }
+
+    @media screen and (max-width: 375px) {
+      padding-top: 314px;
+    }
   }
 
   &__time {
@@ -49,5 +53,8 @@
   &__button {
     height: 69px;
     padding-right: 2px;
+    @media screen and (max-width: 375px) {
+      height: 40px;
+    }
   }
 }

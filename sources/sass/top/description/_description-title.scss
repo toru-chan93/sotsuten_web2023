@@ -15,11 +15,17 @@
 
   &__img {
     width: 189px;
+    @media screen and (max-width: 375px) {
+      width: 165px;
+    }
   }
 
   &__sub-img {
     @include mq(tb) {
       margin-top: 0;
+    }
+    @media screen and (max-width: 375px) {
+      height: 163px;
     }
 
     height: 187px;

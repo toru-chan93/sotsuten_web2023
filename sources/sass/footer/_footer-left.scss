@@ -14,11 +14,17 @@
     padding-top: 32px;
     width: get-vw(328px, 1280px);
   }
+  @media screen and (max-width: 375px) {
+    padding-top: 100px;
+  }
 
   &__title {
     @include mq(tb) {
       padding-bottom: 40px;
       width: get-vw(216px, 1280px);
+    }
+    @media screen and (max-width: 375px) {
+      padding-bottom: 12px;
     }
 
     padding-bottom: $m-32;

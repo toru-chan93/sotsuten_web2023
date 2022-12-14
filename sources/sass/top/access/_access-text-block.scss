@@ -8,4 +8,7 @@
     justify-content: space-between;
     padding-top: 0;
   }
+  @media screen and (max-width: 375px) {
+    padding-top: 24px;
+  }
 }

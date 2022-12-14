@@ -30,6 +30,9 @@
 
     img {
       height: 36px;
+      @media screen and (max-width: 375px) {
+        height: 26px;
+      }
     }
   }
 

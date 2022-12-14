@@ -89,6 +89,12 @@ a :hover {
     width: 22px;
   }
 }
+@media screen and (max-width: 375px) {
+  .header-side {
+    bottom: 14px;
+    height: 22px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   @-webkit-keyframes loop {
@@ -230,6 +236,11 @@ a :hover {
 .header-nav__button img {
   height: 36px;
 }
+@media screen and (max-width: 375px) {
+  .header-nav__button img {
+    height: 26px;
+  }
+}
 .header-nav__sns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,6 +365,11 @@ a :hover {
     width: 25.625vw;
   }
 }
+@media screen and (max-width: 375px) {
+  .footer-left {
+    padding-top: 100px;
+  }
+}
 .footer-left__title {
   padding-bottom: 32px;
   width: 100%;
@@ -362,6 +378,11 @@ a :hover {
   .footer-left__title {
     padding-bottom: 40px;
     width: 16.875vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer-left__title {
+    padding-bottom: 12px;
   }
 }
 .footer-left__time {
@@ -417,6 +438,11 @@ a :hover {
     padding-top: 32px;
   }
 }
+@media screen and (max-width: 375px) {
+  .footer-right {
+    padding-top: 28px;
+  }
+}
 .footer-right p {
   color: #0ff;
   margin-top: 48px;
@@ -433,6 +459,11 @@ a :hover {
   .footer-right p {
     margin: 0;
     padding-top: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer-right p {
+    margin-top: 24px;
   }
 }
 .footer-right__contents {
@@ -536,6 +567,11 @@ a :hover {
     right: 9.6875vw;
   }
 }
+@media screen and (max-width: 375px) {
+  .main__reserve {
+    padding-top: 314px;
+  }
+}
 .main__time {
   height: 25px;
   padding-right: 2px;
@@ -543,6 +579,11 @@ a :hover {
 .main__button {
   height: 69px;
   padding-right: 2px;
+}
+@media screen and (max-width: 375px) {
+  .main__button {
+    height: 40px;
+  }
 }
 
 .top-description {
@@ -682,6 +723,11 @@ a :hover {
 .description-title__img {
   width: 189px;
 }
+@media screen and (max-width: 375px) {
+  .description-title__img {
+    width: 165px;
+  }
+}
 .description-title__sub-img {
   height: 187px;
   margin-top: -15px;
@@ -689,6 +735,11 @@ a :hover {
 @media screen and (min-width: 768px) {
   .description-title__sub-img {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .description-title__sub-img {
+    height: 163px;
   }
 }
 
@@ -725,6 +776,7 @@ a :hover {
   display: flex;
 }
 .description-text p {
+  margin: 0;
   color: #fff;
   font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
@@ -733,12 +785,22 @@ a :hover {
   font-weight: 500;
   letter-spacing: 0.08rem;
   line-height: 1.8;
-  margin: 0;
+}
+@media screen and (max-width: 375px) {
+  .description-text p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
 }
 .description-text p img {
   height: 14px;
   margin-left: 2px;
   margin-right: 2px;
+}
+@media screen and (max-width: 375px) {
+  .description-text p img {
+    height: 12.5px;
+  }
 }
 
 .access {
@@ -859,6 +921,11 @@ a :hover {
 .access-info__sp img {
   width: 32px;
 }
+@media screen and (max-width: 375px) {
+  .access-info__sp img {
+    width: 28px;
+  }
+}
 .access-info__event {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -883,6 +950,11 @@ a :hover {
     margin-left: -16px;
   }
 }
+@media screen and (max-width: 375px) {
+  .access-info__event {
+    margin-top: -8px;
+  }
+}
 .access-info__event ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,6 +964,11 @@ a :hover {
 @media screen and (min-width: 768px) {
   .access-info__event ul {
     padding: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .access-info__event ul {
+    padding-top: 8px;
   }
 }
 .access-info__event ul li {
@@ -904,6 +981,11 @@ a :hover {
   letter-spacing: 0.08rem;
   line-height: 1.6;
   padding-left: 16px;
+}
+@media screen and (max-width: 375px) {
+  .access-info__event ul li {
+    font-size: 14px;
+  }
 }
 .access-info__sub-title {
   width: 22.5641025641vw;
@@ -932,6 +1014,12 @@ a :hover {
   line-height: 1.8;
   margin-bottom: 0;
   margin-top: 24px;
+}
+@media screen and (max-width: 375px) {
+  .access-info__description p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .access-info__time {
@@ -968,6 +1056,11 @@ a :hover {
     margin-top: -16px;
   }
 }
+@media screen and (max-width: 375px) {
+  .access-link {
+    margin-top: 0;
+  }
+}
 .access-link img {
   height: 40px;
   padding-top: 16px;
@@ -975,6 +1068,12 @@ a :hover {
 @media screen and (min-width: 768px) {
   .access-link img {
     height: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .access-link img {
+    height: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -990,6 +1089,11 @@ a :hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .access-text-block {
+    padding-top: 24px;
   }
 }
 
@@ -1080,6 +1184,11 @@ a :hover {
 .book-contents__title {
   width: 64px;
 }
+@media screen and (max-width: 375px) {
+  .book-contents__title {
+    width: 56px;
+  }
+}
 .book-contents__link {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -1103,8 +1212,18 @@ a :hover {
 .book-contents__reserve {
   height: 44px;
 }
+@media screen and (max-width: 375px) {
+  .book-contents__reserve {
+    height: 38px;
+  }
+}
 .book-contents__time {
   height: 18px;
+}
+@media screen and (max-width: 375px) {
+  .book-contents__time {
+    height: 15px;
+  }
 }
 .book-contents__canvas {
   background-color: #fff;
@@ -1121,6 +1240,12 @@ a :hover {
     width: calc((100% - 24px) / 11 * 9);
   }
 }
+@media screen and (max-width: 375px) {
+  .book-contents__canvas {
+    height: 65vw;
+    margin-top: 18px;
+  }
+}
 
 .book-text {
   margin-top: 32px;
@@ -1130,6 +1255,11 @@ a :hover {
     margin-left: calc((100% - 24px) / 11 * 2 + 24px);
     margin-top: 0;
     width: calc((100% - 24px) / 11 * 6);
+  }
+}
+@media screen and (max-width: 375px) {
+  .book-text {
+    margin-top: 18px;
   }
 }
 .book-text p {
@@ -1152,6 +1282,11 @@ a :hover {
        -moz-columns: 2;
             columns: 2;
     margin-top: 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .book-text p {
+    font-size: 14px;
   }
 }
 

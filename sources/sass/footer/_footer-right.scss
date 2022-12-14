@@ -11,6 +11,9 @@
     padding-bottom: $m-32;
     padding-top: $m-32;
   }
+  @media screen and (max-width: 375px) {
+    padding-top: 28px;
+  }
 
   p {
     color: $color-hurt;
@@ -20,6 +23,9 @@
     @include mq(tb) {
       margin: 0;
       padding-top: $m-16;
+    }
+    @media screen and (max-width: 375px) {
+      margin-top: 24px;
     }
   }
 

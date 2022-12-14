@@ -23,6 +23,9 @@
 
     img {
       width: 32px;
+      @media screen and (max-width: 375px) {
+        width: 28px;
+      }
     }
   }
 
@@ -37,6 +40,9 @@
       margin: 0;
       margin-left: -16px;
     }
+    @media screen and (max-width: 375px) {
+      margin-top: -8px;
+    }
 
     ul {
       display: flex;
@@ -45,9 +51,15 @@
       @include mq(tb) {
         padding: 0;
       }
+      @media screen and (max-width: 375px) {
+        padding-top: $m-8;
+      }
 
       li {
         @include text-style-body_red-02;
+        @media screen and (max-width: 375px) {
+          font-size: 14px;
+        }
 
         padding-left: 16px;
       }
@@ -71,6 +83,10 @@
   &__description {
     p {
       @include text-style-body_red;
+      @media screen and (max-width: 375px) {
+        font-size: 14px;
+        margin-top: 10px;
+      }
 
       margin-bottom: 0;
       margin-top: $m-24;

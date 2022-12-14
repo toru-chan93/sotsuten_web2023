@@ -6,14 +6,20 @@
   display: flex;
 
   p {
-    @include text-style-body_white;
-
     margin: 0;
+    @include text-style-body_white;
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
 
     img {
       height: 14px;
       margin-left: 2px;
       margin-right: 2px;
+      @media screen and (max-width: 375px) {
+        height: 12.5px;
+      }
     }
   }
 }

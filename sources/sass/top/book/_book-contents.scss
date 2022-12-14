@@ -24,6 +24,9 @@
 
   &__title {
     width: $m-64;
+    @media screen and (max-width: 375px) {
+      width: 56px;
+    }
   }
 
   &__link {
@@ -39,10 +42,16 @@
 
   &__reserve {
     height: 44px;
+    @media screen and (max-width: 375px) {
+      height: 38px;
+    }
   }
 
   &__time {
     height: 18px;
+    @media screen and (max-width: 375px) {
+      height: 15px;
+    }
   }
 
   &__canvas {
@@ -56,6 +65,10 @@
       height: 60vh;
       margin: 0;
       width: calc((100% - 24px) / 11 * 9);
+    }
+    @media screen and (max-width: 375px) {
+      height: 65vw;
+      margin-top: 18px;
     }
   }
 }
