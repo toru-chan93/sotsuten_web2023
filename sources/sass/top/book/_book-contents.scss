@@ -10,6 +10,20 @@
     justify-content: space-between;
   }
 
+ &__webgl-container {
+    background-color: $color-main;
+    height: 71vw;
+    margin-left: get-vw(-31px, 390px);
+    margin-right: get-vw(-31px, 390px);
+    margin-top: $m-48;
+    width: 100vw;
+    @include mq(tb) {
+      height: 60vh;
+      margin: 0;
+      width: calc((100% - 24px) / 11 * 9);
+    }
+  }
+
   &__text {
     align-items: center;
     display: flex;
@@ -46,16 +60,7 @@
   }
 
   &__canvas {
-    background-color: $color-white;
-    height: 71vw;
-    margin-left: get-vw(-31px, 390px);
-    margin-right: get-vw(-31px, 390px);
-    margin-top: $m-48;
-    width: 100vw;
-    @include mq(tb) {
-      height: 60vh;
-      margin: 0;
-      width: calc((100% - 24px) / 11 * 9);
-    }
+    height: 100%;
+    width: 100%;
   }
 }
