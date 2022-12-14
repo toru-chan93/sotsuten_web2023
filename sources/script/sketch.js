@@ -95,20 +95,38 @@ export const sketch = (p) => {
   }
 
   function sectionHartAnimationSetting() {
-    if (selector == 2) {
-      e_animation_scale = new neko.Tween(1.0);
-      e_animation_scale.eventPush(0.965, 1, 400, neko.Easing.easeInQuart);
-      e_animation_scale.eventPush(1, 0.95, 400, neko.Easing.easeInOutQuart);
-      e_animation_scale.eventPush(0.95, 0.96, 1200, neko.Easing.easeInOutQuad);
-      e_animation_scale.eventPush(0.96, 0.965, 1600);
-      e_animation_scale.execute();
+    if (p.width < 768) {
+      if (selector == 2) {
+        e_animation_scale = new neko.Tween(1.0);
+        e_animation_scale.eventPush(0.955, 1, 400, neko.Easing.easeInQuart);
+        e_animation_scale.eventPush(1, 0.9, 400, neko.Easing.easeInOutQuart);
+        e_animation_scale.eventPush(0.9, 0.935, 1200, neko.Easing.easeInOutQuad);
+        e_animation_scale.eventPush(0.935, 0.955, 1600);
+        e_animation_scale.execute();
+      } else {
+        e_animation_scale = new neko.Tween(1.0);
+        e_animation_scale.eventPush(0.975, 1, 400, neko.Easing.easeInQuart);
+        e_animation_scale.eventPush(1, 0.95, 400, neko.Easing.easeInOutQuart);
+        e_animation_scale.eventPush(0.95, 0.965, 1200, neko.Easing.easeInOutQuad);
+        e_animation_scale.eventPush(0.965, 0.975, 1600);
+        e_animation_scale.execute();
+      }
     } else {
-      e_animation_scale = new neko.Tween(1.0);
-      e_animation_scale.eventPush(0.99, 1, 400, neko.Easing.easeInQuart);
-      e_animation_scale.eventPush(1, 0.98, 400, neko.Easing.easeInOutQuart);
-      e_animation_scale.eventPush(0.98, 0.985, 1200, neko.Easing.easeInOutQuad);
-      e_animation_scale.eventPush(0.985, 0.99, 1600);
-      e_animation_scale.execute();
+      if (selector == 2) {
+        e_animation_scale = new neko.Tween(1.0);
+        e_animation_scale.eventPush(0.965, 1, 400, neko.Easing.easeInQuart);
+        e_animation_scale.eventPush(1, 0.95, 400, neko.Easing.easeInOutQuart);
+        e_animation_scale.eventPush(0.95, 0.96, 1200, neko.Easing.easeInOutQuad);
+        e_animation_scale.eventPush(0.96, 0.965, 1600);
+        e_animation_scale.execute();
+      } else {
+        e_animation_scale = new neko.Tween(1.0);
+        e_animation_scale.eventPush(0.99, 1, 400, neko.Easing.easeInQuart);
+        e_animation_scale.eventPush(1, 0.98, 400, neko.Easing.easeInOutQuart);
+        e_animation_scale.eventPush(0.98, 0.985, 1200, neko.Easing.easeInOutQuad);
+        e_animation_scale.eventPush(0.985, 0.99, 1600);
+        e_animation_scale.execute();
+      }
     }
   }
 
@@ -154,18 +172,35 @@ export const sketch = (p) => {
       section_real_scale = [p.width, p.width, map.clientWidth, p.width, footer.clientHeight * 2];
       section_scale = [0.995, 0.6, 0.21, 0, 0]
     }
-    section_transform = [
-      {x: p.width / 2, y: p.height / 2},
-      {x: p.width / 2 + p.width * 0.05, y: p.height / 2 - p.height * 0.07},
-      {
-        x: map.getBoundingClientRect().left + map.clientWidth * 0.7815,
-        y: (map.getBoundingClientRect().top + window.pageYOffset) - access.clientHeight * 2 + map.clientWidth * 0.236
-      },
-      {x: p.width / 2, y: p.height / 2},
-      {
-        x: footer.clientHeight * 0.5,
-        y: footer.getBoundingClientRect().top + footer.clientHeight / 2
-      }
-    ];
-  }
+
+    if (p.width < 768) {
+      section_transform = [
+        {x: p.width / 2, y: p.height / 2 - p.height * 0.05},
+        {x: p.width / 2 + p.width * 0.01, y: p.height / 2 - p.height * 0.02},
+        {
+          x: map.getBoundingClientRect().left + map.clientWidth * 0.7815,
+          y: (map.getBoundingClientRect().top + window.pageYOffset) - access.clientHeight * 2 + map.clientWidth * 0.236
+        },
+        {x: p.width / 2, y: p.height / 2},
+        {
+          x: footer.clientHeight * 0.5,
+          y: footer.getBoundingClientRect().top + footer.clientHeight / 2
+        }
+      ];
+    } else {
+      section_transform = [
+        {x: p.width / 2, y: p.height / 2},
+        {x: p.width / 2 + p.width * 0.05, y: p.height / 2 - p.height * 0.07},
+        {
+          x: map.getBoundingClientRect().left + map.clientWidth * 0.7815,
+          y: (map.getBoundingClientRect().top + window.pageYOffset) - access.clientHeight * 2 + map.clientWidth * 0.236
+        },
+        {x: p.width / 2, y: p.height / 2},
+        {
+          x: footer.clientHeight * 0.5,
+          y: footer.getBoundingClientRect().top + footer.clientHeight / 2
+        }
+      ];
+    }
+  }  
 };
