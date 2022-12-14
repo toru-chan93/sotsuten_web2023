@@ -61,6 +61,13 @@ gulp.task("img", (done) => {
   done();
 });
 
+gulp.task("model", (done) => {
+  gulp
+    .src(["sources/*.{glb}", "sources/model/**"], { base: "sources" })
+    .pipe(gulp.dest("./public/assets"));
+  done();
+});
+
 // リロードするhtml
 const reloadFile = (done) => {
   browserSync.init({
@@ -91,7 +98,7 @@ gulp.task("reload", (done) => {
 });
 
 // build, watch
-gulp.task("build", gulp.series("sass", "ejs", "img")); //構築の際に行うことを記述
+gulp.task("build", gulp.series("sass", "ejs", "img", "model")); //構築の際に行うことを記述
 
 gulp.task("watch", (done) => {
   gulp.watch(["./sources/sass/**/*.scss"], gulp.series("sass", "reload"));
@@ -100,6 +107,10 @@ gulp.task("watch", (done) => {
   gulp.watch(
     ["./sources/img/*.{jpg,png,svg,gif}", "./sources/img/**/*"],
     gulp.series("img", "reload")
+  );
+  gulp.watch(
+    ["sources/*.{glb}", "sources/model/**"],
+    gulp.series("model", "reload")
   );
   done();
 });
