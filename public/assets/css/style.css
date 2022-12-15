@@ -569,7 +569,7 @@ a :hover {
 }
 @media screen and (max-width: 375px) {
   .main__reserve {
-    padding-top: 314px;
+    padding-top: 254px;
   }
 }
 .main__time {
@@ -1155,6 +1155,21 @@ a :hover {
             justify-content: space-between;
   }
 }
+.book-contents__webgl-container {
+  background-color: #f00;
+  height: 71vw;
+  margin-left: -7.9487179487vw;
+  margin-right: -7.9487179487vw;
+  margin-top: 48px;
+  width: 100vw;
+}
+@media screen and (min-width: 768px) {
+  .book-contents__webgl-container {
+    height: 60vh;
+    margin: 0;
+    width: calc((100% - 24px) / 11 * 9);
+  }
+}
 .book-contents__text {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1226,25 +1241,8 @@ a :hover {
   }
 }
 .book-contents__canvas {
-  background-color: #fff;
-  height: 71vw;
-  margin-left: -7.9487179487vw;
-  margin-right: -7.9487179487vw;
-  margin-top: 48px;
-  width: 100vw;
-}
-@media screen and (min-width: 768px) {
-  .book-contents__canvas {
-    height: 60vh;
-    margin: 0;
-    width: calc((100% - 24px) / 11 * 9);
-  }
-}
-@media screen and (max-width: 375px) {
-  .book-contents__canvas {
-    height: 65vw;
-    margin-top: 18px;
-  }
+  height: 100%;
+  width: 100%;
 }
 
 .book-text {
