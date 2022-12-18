@@ -59,10 +59,12 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-right: get-vw(9.38px, 390px);
+
+    // padding-right: get-vw(9.38px, 390px);
+    padding-right: get-vw(24px, 390px);
     width: fit-content;
     @include mq(tb) {
-      padding-right: get-vw(13px, 1280px);
+      padding-right: $m-24;
       width: auto;
     }
   }
@@ -77,10 +79,11 @@
 
   &__icon-bottom {
     @include mq(tb) {
-      width: get-vw(100px, 1280px);
+      width: get-vw(152px, 1280px);
     }
 
-    width: get-vw(73px, 390px);
+    // width: get-vw(73px, 390px);
+    width: get-vw(110px, 390px);
   }
 
   &__caption {

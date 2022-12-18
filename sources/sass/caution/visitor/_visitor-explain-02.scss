@@ -49,6 +49,9 @@
     @include mq(tb) {
       margin-left: get-vw(24px, 1280px);
     }
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 
   &__underline {
@@ -58,5 +61,8 @@
     margin-left: 0;
     padding-bottom: $m-8;
     width: fit-content;
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 }

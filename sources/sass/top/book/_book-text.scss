@@ -9,7 +9,7 @@
     width: calc((100% - 24px) / 11 * 6);
   }
   @media screen and (max-width: 375px) {
-    margin-top: 18px;
+    margin-top: 0;
   }
 
   p {
@@ -23,6 +23,7 @@
     }
     @media screen and (max-width: 375px) {
       font-size: 14px;
+      margin-top: 16px;
     }
   }
 }

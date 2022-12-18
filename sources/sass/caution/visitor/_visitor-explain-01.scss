@@ -34,5 +34,8 @@
     margin-top: -5px;
     padding-bottom: $m-16;
     @include text-style-body_red;
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 }

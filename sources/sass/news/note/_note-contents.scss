@@ -35,6 +35,9 @@
       padding-bottom: $m-24;
       width: get-vw(293px, 1280px);
     }
+    @media screen and (max-width: 375px) {
+      line-height: 1.4;
+    }
   }
 
   &__time {

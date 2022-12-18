@@ -22,6 +22,9 @@
       margin: 0;
       width: calc((100% - 24px) / 11 * 9);
     }
+    @media screen and (max-width: 375px) {
+      margin-top: 16px;
+    }
   }
 
   &__text {
@@ -71,5 +74,9 @@
   &__canvas {
     height: 100%;
     width: 100%;
+    @media screen and (max-width: 375px) {
+      height: 65vh;
+      margin-top: 16px;
+    }
   }
 }

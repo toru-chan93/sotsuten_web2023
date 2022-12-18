@@ -16,5 +16,9 @@
     @include mq(tb) {
       margin-top: $m-48;
     }
+    @media screen and (max-width: 375px) {
+      height: 64px;
+      margin-top: 84px;
+    }
   }
 }

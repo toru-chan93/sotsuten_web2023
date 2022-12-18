@@ -42,6 +42,9 @@
       padding-top: 164px;
       width: get-vw(426px, 1280px);
     }
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+    }
   }
 
   &__hurt {
@@ -50,6 +53,9 @@
     @include mq(tb) {
       margin-top: -34px;
       width: get-vw(416px, 1280px);
+    }
+    @media screen and (max-width: 375px) {
+      margin-top: 26px;
     }
   }
 }
