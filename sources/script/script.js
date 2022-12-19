@@ -30,8 +30,13 @@ window.addEventListener("scroll", function () {
   // pcサイズならheader(pc)を表示
   if (window.matchMedia("(min-width: 768px)").matches) {
     // topページか否かの確認
-    let url = location.pathname;
-    if (url == "/index.html") {
+    let url = location.href;
+    if (
+      url == "http://localhost:8080/index.html" ||
+      url == "http://localhost:8080/" ||
+      url == "https://integrated.jp/gw23/" ||
+      url == "https://integrated.jp/gw23/index.html"
+    ) {
       // topページのみ遅れてheader(pc)を表示
       if (window.pageYOffset > window.outerHeight - 100) {
         console.log("ヨイショ!!");

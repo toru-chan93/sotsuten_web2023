@@ -75,7 +75,7 @@
     height: 100%;
     width: 100%;
     @media screen and (max-width: 375px) {
-      height: 65vh;
+      height: 35vh !important;
       margin-top: 16px;
     }
   }

@@ -21,7 +21,7 @@
   &__title {
     @include mq(tb) {
       padding-bottom: 40px;
-      width: get-vw(216px, 1280px);
+      width: get-vw(240px, 1280px);
     }
     @media screen and (max-width: 375px) {
       padding-bottom: 12px;
@@ -46,6 +46,7 @@
   }
 
   &__link {
+    display: none;
     height: 38px;
     width: 200px;
 
