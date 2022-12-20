@@ -1,653 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light" />
-    <meta name="theme-color" content="#ff0000" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" />
-    <!-- <script src="./assets/script/script.js"></script> -->
-    <meta name="format-detection" content="telephone=no" />
-    <!-- OGPここから -->
-    <meta property="og:title" content="統合デザインの卒展 2023" />
-    <meta
-      property="og:description"
-      content="1月18日(水)〜22日(日) 9時〜17時 多摩美術大学・上野毛キャンパス 入場無料 事前予約制"
-    />
-    <meta property="og:url" content="https://integrated.jp/gw23/" />
-    <meta
-      property="og:image"
-      content="https://integrated.jp/gw23/images/OGP.png"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="統合デザインの卒展 2023" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@integrated_gw" />
-    <!-- OGPここまで -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      href="https://integrated.jp/gw23/images/favicon.ico"
-      id="favicon"
-    />
-    <title>統合デザインの卒展 2023</title>
-    <!-- font -->
-    <!-- interstate -->
-    <!-- 見出しゴ -->
-    <!-- 太ゴ -->
-    <script>
-      (function (d) {
-        var config = {
-            kitId: "kje7xti",
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-          }, config.scriptTimeout),
-          tk = d.createElement("script"),
-          f = false,
-          s = d.getElementsByTagName("script")[0],
-          a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ff0000" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" />
+  <!-- <script src="./assets/script/script.js"></script> -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- OGPここから -->
+  <meta property="og:title" content="統合デザインの卒展 2023" />
+  <meta
+    property="og:description"
+    content="1月18日(水)〜22日(日) 9時〜17時 多摩美術大学・上野毛キャンパス 入場無料"
+  />
+  <meta property="og:url" content="https://integrated.jp/gw23/" />
+  <meta
+    property="og:image"
+    content="https://integrated.jp/gw23/images/OGP.png"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="統合デザインの卒展 2023" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@integrated_gw" />
+  <!-- OGPここまで -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="icon"
+    href="https://integrated.jp/gw23/images/favicon.ico"
+    id="favicon"
+  />
+  <title>統合デザインの卒展 2023</title>
+  <!-- font -->
+  <!-- interstate -->
+  <!-- 見出しゴ -->
+  <!-- 太ゴ -->
+  <script>
+    (function (d) {
+      var config = {
+          kitId: "kje7xti",
+          scriptTimeout: 3000,
+          async: true,
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
   <body>
     <div class="filter"></div>
-    <header class="header">
-      <div class="header-pc" id="js-header">
-        <div class="header-pc__contents">
-          <a class="header-pc__items" href="./index.html">
-            <img src="assets/img/common/header-top.svg" alt="トップ" />
-          </a>
-          <a class="header-pc__items" href="./archive.html">
-            <img src="assets/img/common/header-archive.svg" alt="アーカイブ" />
-          </a>
-          <a class="header-pc__items" href="./news.html">
-            <img src="assets/img/common/header-news.svg" alt="ニュース" />
-          </a>
-          <a class="header-pc__items" href="./caution.html">
-            <img
-              src="assets/img/common/header-caution.svg"
-              alt="来場時の注意事項"
-            />
-          </a>
-        </div>
-        <div class="header-pc__contents">
-          <a
-            class="header-pc__items"
-            href="https://twitter.com/integrated_gw?s=20&t=M5hsY8ptON_Kqor3cQ3EaQ"
-            target="_blank"
-          >
-            <img src="assets/img/common/header-twitter.svg" alt="Twitter" />
-          </a>
-          <a
-            class="header-pc__items"
-            href="https://note.com/900000/"
-            target="_blank"
-          >
-            <img src="assets/img/common/header-note.svg" alt="note" />
-          </a>
-          <a
-            class="header-pc__items"
-            href="https://www.instagram.com/integrated_gw/"
-            target="_blank"
-          >
-            <img src="assets/img/common/header-instagram.svg" alt="Instagram" />
-          </a>
-        </div>
+ <header class="header">
+  <div class="header-pc" id="js-header">
+  <div class="header-pc__contents">
+    <a class="header-pc__items" href="./index.html">
+      <img src="assets/img/common/header-top.svg" alt="トップ" />
+    </a>
+    <a class="header-pc__items" href="./archive.html">
+      <img src="assets/img/common/header-archive.svg" alt="アーカイブ" />
+    </a>
+    <a class="header-pc__items" href="./news.html">
+      <img src="assets/img/common/header-news.svg" alt="ニュース" />
+    </a>
+    <a class="header-pc__items" href="./caution.html">
+      <img src="assets/img/common/header-caution.svg" alt="来場時の注意事項" />
+    </a>
+  </div>
+  <div class="header-pc__contents">
+    <a
+      class="header-pc__items"
+      href="https://twitter.com/integrated_gw?s=20&t=M5hsY8ptON_Kqor3cQ3EaQ"
+      target="_blank"
+    >
+      <img src="assets/img/common/header-twitter.svg" alt="Twitter" />
+    </a>
+    <a class="header-pc__items" href="https://note.com/900000/" target="_blank">
+      <img src="assets/img/common/header-note.svg" alt="note" />
+    </a>
+    <a
+      class="header-pc__items"
+      href="https://www.instagram.com/integrated_gw/"
+      target="_blank"
+    >
+      <img src="assets/img/common/header-instagram.svg" alt="Instagram" />
+    </a>
+  </div>
+</div>
+ <div class="header-sp" id="js-ham">
+  <a class="header-sp__contents">
+    <img class="header-sp__hamburger" src="assets/img/common/header-sp.svg" />
+  </a>
+</div>
+</header>
+ <nav class="header-nav" id="js-nav">
+  <div class="header-nav__links">
+    <a class="header-nav__button" href="./index.html">
+      <img src="assets/img/common/footer-top.svg" alt="トップ" />
+    </a>
+    <a class="header-nav__button" href="./archive.html">
+      <img src="assets/img/common/footer-archive.svg" alt="アーカイブ" />
+    </a>
+    <a class="header-nav__button" href="./news.html">
+      <img src="assets/img/common/footer-news.svg" alt="ニュース" />
+    </a>
+    <a class="header-nav__button" href="./caution.html">
+      <img src="assets/img/common/footer-caution.svg" alt="来場時の注意事項" />
+    </a>
+  </div>
+  <div class="header-nav__sns">
+    <a
+      class="header-nav__button"
+      href="https://twitter.com/integrated_gw?s=20&t=M5hsY8ptON_Kqor3cQ3EaQ"
+      target="_blank"
+    >
+      <img src="assets/img/common/footer-twitter.svg" alt="Twitter" />
+    </a>
+    <a
+      class="header-nav__button"
+      href="https://note.com/900000/"
+      target="_blank"
+    >
+      <img src="assets/img/common/footer-note.svg" alt="note" />
+    </a>
+    <a
+      class="header-nav__button"
+      href="https://www.instagram.com/integrated_gw/"
+      target="_blank"
+    >
+      <img src="assets/img/common/footer-instagram.svg" alt="Instagram" />
+    </a>
+  </div>
+  <div class="header-nav__info">
+    <img
+      class="header-nav__title"
+      src="assets/img/footer_text.svg"
+      alt="多摩美術大学 統合デザイン学科の卒展 2023.1.18 水 - 22 日 9:00-17:00 上野毛キャンパス 入場無料 事前予約制"
+    />
+    <img class="header-nav__time" src="assets/img/footer_reserve-time.svg" />
+    <a class="header-nav__reserve" href="#" target="_blank">
+      <img src="assets/img/top-access_reserve.svg" alt="来場予約はこちらから" />
+    </a>
+  </div>
+</nav>
+ <div class="header-side"></div>
+ <section class="caution-main">
+  <img
+    class="caution-main__title"
+    src="assets/img/caution-main_title.svg"
+    alt="来場の際の注意事項"
+  />
+  <div class="caution-main__col">
+    <p class="caution-main__text">
+      本展示の来場の際には以下の注意事項をよくご確認の上お越しください。また、スタッフも感染対策として以下のことをこと実施します。
+    </p>
+    <img class="caution-main__hurt" src="assets/img/hurt-red.svg" />
+  </div>
+</section>
+    <section class="staff">
+  <div class="staff-contents">
+    <img
+      class="staff-contents__title"
+      src="assets/img/caution-staff_title.svg"
+      alt="会場、スタッフの感染対策"
+    />
+    <div class="staff-img__sp">
+      <div class="staff-img__contents">
+        <img
+          class="staff-img__icon"
+          src="assets/img/caution-staff_pict-01.gif"
+          alt="展示室の換気"
+        />
+        <p class="staff-img__caption">展示室の換気</p>
       </div>
-      <div class="header-sp" id="js-ham">
-        <a class="header-sp__contents">
-          <img
-            class="header-sp__hamburger"
-            src="assets/img/common/header-sp.svg"
-          />
-        </a>
+      <div class="staff-img__contents">
+        <img
+          class="staff-img__icon"
+          src="assets/img/caution-staff_pict-02.gif"
+          alt="マスクの着用"
+        />
+        <p class="staff-img__caption">マスクの着用</p>
       </div>
-    </header>
-    <nav class="header-nav" id="js-nav">
-      <div class="header-nav__links">
-        <a class="header-nav__button" href="./index.html">
+      <div class="staff-img__contents">
+        <img
+          class="staff-img__icon"
+          src="assets/img/caution-visitor_pict-05.gif"
+          alt="手先の消毒"
+        />
+        <p class="staff-img__caption">手先の消毒</p>
+      </div>
+      <div class="staff-img__contents">
+        <img
+          class="staff-img__icon"
+          src="assets/img/caution-staff_pict-04.gif"
+          alt="自己管理"
+        />
+        <p class="staff-img__caption">自己管理</p>
+      </div>
+    </div>
+    <div class="staff-contents__text">
+      <p>混雑時に入場制限を実施する可能性があります。</p>
+      <p>会場内に手指消毒液を設置します。</p>
+      <p>会場内は定期的な換気の実施します。</p>
+      <p>スタッフはマスク着用を徹底します。</p>
+      <p>
+        スタッフは在廊時に検温を行い、手洗い、うがい、手指消毒などの自己管理を徹底します。
+      </p>
+    </div>
+  </div>
+  <div class="staff-img__pc">
+    <div class="staff-img__contents">
+      <img
+        class="staff-img__icon"
+        src="assets/img/caution-staff_pict-01.gif"
+        alt="展示室の換気"
+      />
+      <p class="staff-img__caption">展示室の換気</p>
+    </div>
+    <div class="staff-img__contents">
+      <img
+        class="staff-img__icon"
+        src="assets/img/caution-staff_pict-02.gif"
+        alt="マスクの着用"
+      />
+      <p class="staff-img__caption">マスクの着用</p>
+    </div>
+    <div class="staff-img__contents">
+      <img
+        class="staff-img__icon"
+        src="assets/img/caution-visitor_pict-05.gif"
+        alt="検温"
+      />
+      <p class="staff-img__caption">手先の消毒</p>
+    </div>
+    <div class="staff-img__contents">
+      <img
+        class="staff-img__icon"
+        src="assets/img/caution-staff_pict-04.gif"
+        alt="自己管理"
+      />
+      <p class="staff-img__caption">自己管理</p>
+    </div>
+  </div>
+</section>
+<section class="visitor">
+  <img
+    class="visitor__title"
+    src="assets/img/caution-visitor_title.svg"
+    alt="来場者の皆様へのお願い"
+  />
+  <div class="visitor-contents">
+    <div class="visitor-colm">
+      <div class="visitor-explain-img__sp">
+  <div class="visitor-explain-img__colm">
+    <img
+      class="visitor-explain-img__title"
+      src="assets/img/caution-visitor_image-title-01.svg"
+      alt="来場時"
+    />
+    <div class="visitor-explain-img__pict">
+      <div class="visitor-explain-img__contents">
+        <img
+          class="visitor-explain-img__icon"
+          src="assets/img/caution-staff_pict-02.gif"
+          alt="マスクの着用"
+        />
+        <p class="visitor-explain-img__caption">マスクの着用</p>
+      </div>
+      <div class="visitor-explain-img__contents">
+        <img
+          class="visitor-explain-img__icon"
+          src="assets/img/caution-visitor_pict-05.gif"
+          alt="手先の消毒"
+        />
+        <p class="visitor-explain-img__caption">手先の消毒</p>
+      </div>
+    </div>
+  </div>
+  <div class="visitor-explain-img__colm">
+    <img
+      class="visitor-explain-img__title"
+      src="assets/img/caution-visitor_image-title-02.svg"
+      alt="鑑賞中"
+    />
+    <div class="visitor-explain-img__pict-bottom">
+      <!-- <div class="visitor-explain-img__contents-bottom">
+        <img
+          class="visitor-explain-img__icon-bottom"
+          src="assets/img/caution-staff_pict-02.gif"
+          alt="マスクの着用"
+        />
+        <p class="visitor-explain-img__caption">マスクの着用</p>
+      </div> -->
+      <div class="visitor-explain-img__contents-bottom">
+        <img
+          class="visitor-explain-img__icon-bottom"
+          src="assets/img/caution-visitor_pict-06.gif"
+          alt="距離の確保"
+        />
+        <p class="visitor-explain-img__caption">距離の確保</p>
+      </div>
+      <div class="visitor-explain-img__contents-bottom">
+        <img
+          class="visitor-explain-img__icon-bottom"
+          src="assets/img/caution-visitor_pict-07.gif"
+          alt="お静かに"
+        />
+        <p class="visitor-explain-img__caption">お静かに</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="visitor-explain-01">
+  <img
+    class="visitor-explain-01__title"
+    src="assets/img/caution-visitor_section-title-01.svg"
+    alt="1. 来場方法"
+  />
+  <div class="visitor-explain-01__text-block">
+    <p class="visitor-explain-01__text">会場への来場は南門をご活用ください。</p>
+    <p class="visitor-explain-01__text">
+      駐車駐輪スペースはございません。会場へは電車やバス等の公共交通機関をご利用ください。
+    </p>
+  </div>
+</div>
+ <div class="visitor-explain-02__sp">
+  <img
+    class="visitor-explain-02__title"
+    src="assets/img/caution-visitor_section-title-02.svg"
+    alt="2. 契約事項"
+  />
+  <div class="visitor-explain-02__text-block">
+    <p class="visitor-explain-02__text visitor-explain-02__underline">
+      １つでも当てはまる方は入場をできません
+    </p>
+    <ul>
+      <li class="visitor-explain-02__text">37.5度以上の発熱がある</li>
+      <li class="visitor-explain-02__text">頭痛、強いだるさや息苦しさがある</li>
+      <li class="visitor-explain-02__text">
+        風邪のような症状がある（咳、鼻水、喉の痛み等）
+      </li>
+      <li class="visitor-explain-02__text">味覚・臭覚に異常を感じる</li>
+      <li class="visitor-explain-02__text">
+        過去14日以内に家族等の同居人が新型コロナウイルスに罹患した（疑う症状がある）
+      </li>
+      <li class="visitor-explain-02__text">
+        過去14日以内に罹患者、罹患した疑いのある者との濃厚接触がある
+      </li>
+      <li class="visitor-explain-02__text">
+        過去14日以内の渡航歴（流行地域）がある
+      </li>
+      <li class="visitor-explain-02__text">
+        上記7項目の症状、事象が過去14日以内にある
+      </li>
+    </ul>
+  </div>
+</div>
+ <div class="visitor-explain-03">
+  <img
+    class="visitor-explain-03__title"
+    src="assets/img/caution-visitor_section-title-03.svg"
+    alt="3. お願い"
+  />
+  <div class="visitor-explain-03__text-block">
+    <p class="visitor-explain-03__text">
+      ご来場の際は、マスクの着用をお願いいたします。
+    </p>
+    <!-- <p class="visitor-explain-03__text">入館時に検温を実施します。</p> -->
+    <p class="visitor-explain-03__text">
+      入退館の際は、必ず手の消毒をお願いいたします。
+    </p>
+    <p class="visitor-explain-03__text">
+      会場内の大きな声での会話はお控えください。
+    </p>
+    <p class="visitor-explain-03__text">
+      他の来場者の方への咳エチケットにご協力ください。
+    </p>
+    <p class="visitor-explain-03__text">
+      ご鑑賞の際は、お互いに他の来場者の方との距離を保ってください。
+    </p>
+  </div>
+</div>
+ <div class="visitor-explain-ex__sp">
+  <div class="visitor-explain-ex__text-block">
+    <p class="visitor-explain-ex__text">会場内は禁煙です。</p>
+    <p class="visitor-explain-ex__text">
+      展示室内では飲食禁止です。飲食される場合は休憩スペースをご利用ください。
+    </p>
+    <p class="visitor-explain-ex__text">
+      写真撮影やビデオ撮影は各作品のキャプションをご確認ください。
+    </p>
+    <p class="visitor-explain-ex__text">
+      基本的に作品の接触は禁止です。可能な作品はキャプションをご確認ください。
+    </p>
+  </div>
+</div>
+    </div>
+    <div class="visitor-colm"><div class="visitor-explain-02">
+  <img
+    class="visitor-explain-02__title"
+    src="assets/img/caution-visitor_section-title-02.svg"
+    alt="2. 契約事項"
+  />
+  <div class="visitor-explain-02__text-block">
+    <p class="visitor-explain-02__text visitor-explain-02__underline">
+      １つでも当てはまる方は入場をできません
+    </p>
+    <ul>
+      <li class="visitor-explain-02__text">37.5度以上の発熱がある</li>
+      <li class="visitor-explain-02__text">頭痛、強いだるさや息苦しさがある</li>
+      <li class="visitor-explain-02__text">
+        風邪のような症状がある（咳、鼻水、喉の痛み等）
+      </li>
+      <li class="visitor-explain-02__text">味覚・臭覚に異常を感じる</li>
+      <li class="visitor-explain-02__text">
+        過去14日以内に家族等の同居人が新型コロナウイルスに罹患した（疑う症状がある）
+      </li>
+      <li class="visitor-explain-02__text">
+        過去14日以内に罹患者、罹患した疑いのある者との濃厚接触がある
+      </li>
+      <li class="visitor-explain-02__text">
+        過去14日以内の渡航歴（流行地域）がある
+      </li>
+      <li class="visitor-explain-02__text">
+        上記7項目の症状、事象が過去14日以内にある
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+  </div>
+  <div class="visitor-contents__bottom">
+    <div class="visitor-colm"><div class="visitor-explain-ex">
+  <div class="visitor-explain-ex__text-block">
+    <p class="visitor-explain-ex__text">会場内は禁煙です。</p>
+    <p class="visitor-explain-ex__text">
+      展示室内では飲食禁止です。飲食される場合は休憩スペースをご利用ください。
+    </p>
+    <p class="visitor-explain-ex__text">
+      写真撮影やビデオ撮影は各作品のキャプションをご確認ください。
+    </p>
+    <p class="visitor-explain-ex__text">
+      基本的に作品の接触は禁止です。可能な作品はキャプションをご確認ください。
+    </p>
+  </div>
+</div>
+</div>
+    <div class="visitor-colm"><div class="visitor-explain-img">
+  <div class="visitor-explain-img__colm">
+    <img
+      class="visitor-explain-img__title"
+      src="assets/img/caution-visitor_image-title-01.svg"
+      alt="来場時"
+    />
+    <div class="visitor-explain-img__pict">
+      <div class="visitor-explain-img__contents">
+        <img
+          class="visitor-explain-img__icon"
+          src="assets/img/caution-staff_pict-02.gif"
+          alt="検温"
+        />
+        <p class="visitor-explain-img__caption">マスクの着用</p>
+      </div>
+      <div class="visitor-explain-img__contents">
+        <img
+          class="visitor-explain-img__icon"
+          src="assets/img/caution-visitor_pict-05.gif"
+          alt="手先の消毒"
+        />
+        <p class="visitor-explain-img__caption">手先の消毒</p>
+      </div>
+    </div>
+  </div>
+  <div class="visitor-explain-img__colm">
+    <img
+      class="visitor-explain-img__title"
+      src="assets/img/caution-visitor_image-title-02.svg"
+      alt="鑑賞中"
+    />
+    <div class="visitor-explain-img__pict-bottom">
+      <!-- <div class="visitor-explain-img__contents-bottom">
+        <img
+          class="visitor-explain-img__icon-bottom"
+          src="assets/img/caution-staff_pict-02.gif"
+          alt="マスクの着用"
+        />
+        <p class="visitor-explain-img__caption">マスクの着用</p>
+      </div> -->
+      <div class="visitor-explain-img__contents-bottom">
+        <img
+          class="visitor-explain-img__icon-bottom"
+          src="assets/img/caution-visitor_pict-06.gif"
+          alt="距離の確保"
+        />
+        <p class="visitor-explain-img__caption">距離の確保</p>
+      </div>
+      <div class="visitor-explain-img__contents-bottom">
+        <img
+          class="visitor-explain-img__icon-bottom"
+          src="assets/img/caution-visitor_pict-07.gif"
+          alt="お静かに"
+        />
+        <p class="visitor-explain-img__caption">お静かに</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</section>
+    <footer class="footer">
+  <img src="assets/img/hurt-red.svg" alt="ハート" class="footer__hurt-02" />
+  <div class="footer-left">
+  <img
+    src="assets/img/footer_text.svg"
+    class="footer-left__title"
+    alt="多摩美術大学 統合デザインの卒展"
+  />
+  <div class="footer-left__reserve">
+    <div class="footer-left__link">
+      <img
+        src="assets/img/top-access_reserve.svg"
+        alt=" ̶来̶場̶予̶約̶は̶こ̶ち̶ら̶か̶ら̶  予約不要"
+      />
+    </div>
+  </div>
+</div>
+ <div class="footer-right">
+  <div class="footer-right__contents">
+    <ul>
+      <li>
+        <a href="./index.html">
           <img src="assets/img/common/footer-top.svg" alt="トップ" />
         </a>
-        <a class="header-nav__button" href="./archive.html">
+      </li>
+      <li>
+        <a href="./archive.html">
           <img src="assets/img/common/footer-archive.svg" alt="アーカイブ" />
         </a>
-        <a class="header-nav__button" href="./news.html">
+      </li>
+      <li>
+        <a href="./news.html">
           <img src="assets/img/common/footer-news.svg" alt="ニュース" />
         </a>
-        <a class="header-nav__button" href="./caution.html">
+      </li>
+      <li>
+        <a href="./caution.html">
           <img
             src="assets/img/common/footer-caution.svg"
             alt="来場時の注意事項"
           />
         </a>
-      </div>
-      <div class="header-nav__sns">
+      </li>
+    </ul>
+    <ul>
+      <li>
         <a
-          class="header-nav__button"
           href="https://twitter.com/integrated_gw?s=20&t=M5hsY8ptON_Kqor3cQ3EaQ"
           target="_blank"
         >
           <img src="assets/img/common/footer-twitter.svg" alt="Twitter" />
         </a>
-        <a
-          class="header-nav__button"
-          href="https://note.com/900000/"
-          target="_blank"
-        >
+      </li>
+      <li>
+        <a href="https://note.com/900000/" target="_blank">
           <img src="assets/img/common/footer-note.svg" alt="note" />
         </a>
-        <a
-          class="header-nav__button"
-          href="https://www.instagram.com/integrated_gw/"
-          target="_blank"
-        >
+      </li>
+      <li>
+        <a href="https://www.instagram.com/integrated_gw/" target="_blank">
           <img src="assets/img/common/footer-instagram.svg" alt="Instagram" />
         </a>
-      </div>
-      <div class="header-nav__info">
-        <img
-          class="header-nav__title"
-          src="assets/img/footer_text.svg"
-          alt="多摩美術大学 統合デザイン学科の卒展 2023.1.18 水 - 22 日 9:00-17:00 上野毛キャンパス 入場無料 事前予約制"
-        />
-        <img
-          class="header-nav__time"
-          src="assets/img/footer_reserve-time.svg"
-        />
-        <a class="header-nav__reserve" href="#" target="_blank">
-          <img
-            src="assets/img/top-access_reserve.svg"
-            alt="来場予約はこちらから"
-          />
-        </a>
-      </div>
-    </nav>
-    <div class="header-side"></div>
-    <section class="caution-main">
-      <img
-        class="caution-main__title"
-        src="assets/img/caution-main_title.svg"
-        alt="来場の際の注意事項"
-      />
-      <div class="caution-main__col">
-        <p class="caution-main__text">
-          本展示の来場の際には以下の注意事項をよくご確認の上お越しください。また、スタッフも感染対策として以下のことをこと実施します。
-        </p>
-        <img class="caution-main__hurt" src="assets/img/hurt-red.svg" />
-      </div>
-    </section>
-    <section class="staff">
-      <div class="staff-contents">
-        <img
-          class="staff-contents__title"
-          src="assets/img/caution-staff_title.svg"
-          alt="会場、スタッフの感染対策"
-        />
-        <div class="staff-img__sp">
-          <div class="staff-img__contents">
-            <img
-              class="staff-img__icon"
-              src="assets/img/caution-staff_pict-01.gif"
-              alt="展示室の換気"
-            />
-            <p class="staff-img__caption">展示室の換気</p>
-          </div>
-          <div class="staff-img__contents">
-            <img
-              class="staff-img__icon"
-              src="assets/img/caution-staff_pict-02.gif"
-              alt="マスクの着用"
-            />
-            <p class="staff-img__caption">マスクの着用</p>
-          </div>
-          <div class="staff-img__contents">
-            <img
-              class="staff-img__icon"
-              src="assets/img/caution-visitor_pict-05.gif"
-              alt="手先の消毒"
-            />
-            <p class="staff-img__caption">手先の消毒</p>
-          </div>
-          <div class="staff-img__contents">
-            <img
-              class="staff-img__icon"
-              src="assets/img/caution-staff_pict-04.gif"
-              alt="自己管理"
-            />
-            <p class="staff-img__caption">自己管理</p>
-          </div>
-        </div>
-        <div class="staff-contents__text">
-          <p>混雑時に入場制限を実施する可能性があります。</p>
-          <p>会場内に手指消毒液を設置します。</p>
-          <p>会場内は定期的な換気の実施します。</p>
-          <p>スタッフはマスク着用を徹底します。</p>
-          <p>
-            スタッフは在廊時に検温を行い、手洗い、うがい、手指消毒などの自己管理を徹底します。
-          </p>
-        </div>
-      </div>
-      <div class="staff-img__pc">
-        <div class="staff-img__contents">
-          <img
-            class="staff-img__icon"
-            src="assets/img/caution-staff_pict-01.gif"
-            alt="展示室の換気"
-          />
-          <p class="staff-img__caption">展示室の換気</p>
-        </div>
-        <div class="staff-img__contents">
-          <img
-            class="staff-img__icon"
-            src="assets/img/caution-staff_pict-02.gif"
-            alt="マスクの着用"
-          />
-          <p class="staff-img__caption">マスクの着用</p>
-        </div>
-        <div class="staff-img__contents">
-          <img
-            class="staff-img__icon"
-            src="assets/img/caution-visitor_pict-05.gif"
-            alt="検温"
-          />
-          <p class="staff-img__caption">手先の消毒</p>
-        </div>
-        <div class="staff-img__contents">
-          <img
-            class="staff-img__icon"
-            src="assets/img/caution-staff_pict-04.gif"
-            alt="自己管理"
-          />
-          <p class="staff-img__caption">自己管理</p>
-        </div>
-      </div>
-    </section>
-    <section class="visitor">
-      <img
-        class="visitor__title"
-        src="assets/img/caution-visitor_title.svg"
-        alt="来場者の皆様へのお願い"
-      />
-      <div class="visitor-contents">
-        <div class="visitor-colm">
-          <div class="visitor-explain-img__sp">
-            <div class="visitor-explain-img__colm">
-              <img
-                class="visitor-explain-img__title"
-                src="assets/img/caution-visitor_image-title-01.svg"
-                alt="来場時"
-              />
-              <div class="visitor-explain-img__pict">
-                <div class="visitor-explain-img__contents">
-                  <img
-                    class="visitor-explain-img__icon"
-                    src="assets/img/caution-staff_pict-02.gif"
-                    alt="マスクの着用"
-                  />
-                  <p class="visitor-explain-img__caption">マスクの着用</p>
-                </div>
-                <div class="visitor-explain-img__contents">
-                  <img
-                    class="visitor-explain-img__icon"
-                    src="assets/img/caution-visitor_pict-05.gif"
-                    alt="手先の消毒"
-                  />
-                  <p class="visitor-explain-img__caption">手先の消毒</p>
-                </div>
-              </div>
-            </div>
-            <div class="visitor-explain-img__colm">
-              <img
-                class="visitor-explain-img__title"
-                src="assets/img/caution-visitor_image-title-02.svg"
-                alt="鑑賞中"
-              />
-              <div class="visitor-explain-img__pict-bottom">
-                <!-- <div class="visitor-explain-img__contents-bottom">
-        <img
-          class="visitor-explain-img__icon-bottom"
-          src="assets/img/caution-staff_pict-02.gif"
-          alt="マスクの着用"
-        />
-        <p class="visitor-explain-img__caption">マスクの着用</p>
-      </div> -->
-                <div class="visitor-explain-img__contents-bottom">
-                  <img
-                    class="visitor-explain-img__icon-bottom"
-                    src="assets/img/caution-visitor_pict-06.gif"
-                    alt="距離の確保"
-                  />
-                  <p class="visitor-explain-img__caption">距離の確保</p>
-                </div>
-                <div class="visitor-explain-img__contents-bottom">
-                  <img
-                    class="visitor-explain-img__icon-bottom"
-                    src="assets/img/caution-visitor_pict-07.gif"
-                    alt="お静かに"
-                  />
-                  <p class="visitor-explain-img__caption">お静かに</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="visitor-explain-01">
-            <img
-              class="visitor-explain-01__title"
-              src="assets/img/caution-visitor_section-title-01.svg"
-              alt="1. 来場方法"
-            />
-            <div class="visitor-explain-01__text-block">
-              <p class="visitor-explain-01__text">
-                会場への来場は南門をご活用ください。
-              </p>
-              <p class="visitor-explain-01__text">
-                駐車駐輪スペースはございません。会場へは電車やバス等の公共交通機関をご利用ください。
-              </p>
-            </div>
-          </div>
-          <div class="visitor-explain-02__sp">
-            <img
-              class="visitor-explain-02__title"
-              src="assets/img/caution-visitor_section-title-02.svg"
-              alt="2. 契約事項"
-            />
-            <div class="visitor-explain-02__text-block">
-              <p class="visitor-explain-02__text visitor-explain-02__underline">
-                １つでも当てはまる方は入場をできません
-              </p>
-              <ul>
-                <li class="visitor-explain-02__text">37.5度以上の発熱がある</li>
-                <li class="visitor-explain-02__text">
-                  頭痛、強いだるさや息苦しさがある
-                </li>
-                <li class="visitor-explain-02__text">
-                  風邪のような症状がある（咳、鼻水、喉の痛み等）
-                </li>
-                <li class="visitor-explain-02__text">
-                  味覚・臭覚に異常を感じる
-                </li>
-                <li class="visitor-explain-02__text">
-                  過去14日以内に家族等の同居人が新型コロナウイルスに罹患した（疑う症状がある）
-                </li>
-                <li class="visitor-explain-02__text">
-                  過去14日以内に罹患者、罹患した疑いのある者との濃厚接触がある
-                </li>
-                <li class="visitor-explain-02__text">
-                  過去14日以内の渡航歴（流行地域）がある
-                </li>
-                <li class="visitor-explain-02__text">
-                  上記7項目の症状、事象が過去14日以内にある
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="visitor-explain-03">
-            <img
-              class="visitor-explain-03__title"
-              src="assets/img/caution-visitor_section-title-03.svg"
-              alt="3. お願い"
-            />
-            <div class="visitor-explain-03__text-block">
-              <p class="visitor-explain-03__text">
-                ご来場の際は、マスクの着用をお願いいたします。
-              </p>
-              <!-- <p class="visitor-explain-03__text">入館時に検温を実施します。</p> -->
-              <p class="visitor-explain-03__text">
-                入退館の際は、必ず手の消毒をお願いいたします。
-              </p>
-              <p class="visitor-explain-03__text">
-                会場内の大きな声での会話はお控えください。
-              </p>
-              <p class="visitor-explain-03__text">
-                他の来場者の方への咳エチケットにご協力ください。
-              </p>
-              <p class="visitor-explain-03__text">
-                ご鑑賞の際は、お互いに他の来場者の方との距離を保ってください。
-              </p>
-            </div>
-          </div>
-          <div class="visitor-explain-ex__sp">
-            <div class="visitor-explain-ex__text-block">
-              <p class="visitor-explain-ex__text">会場内は禁煙です。</p>
-              <p class="visitor-explain-ex__text">
-                展示室内では飲食禁止です。飲食される場合は休憩スペースをご利用ください。
-              </p>
-              <p class="visitor-explain-ex__text">
-                写真撮影やビデオ撮影は各作品のキャプションをご確認ください。
-              </p>
-              <p class="visitor-explain-ex__text">
-                基本的に作品の接触は禁止です。可能な作品はキャプションをご確認ください。
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="visitor-colm">
-          <div class="visitor-explain-02">
-            <img
-              class="visitor-explain-02__title"
-              src="assets/img/caution-visitor_section-title-02.svg"
-              alt="2. 契約事項"
-            />
-            <div class="visitor-explain-02__text-block">
-              <p class="visitor-explain-02__text visitor-explain-02__underline">
-                １つでも当てはまる方は入場をできません
-              </p>
-              <ul>
-                <li class="visitor-explain-02__text">37.5度以上の発熱がある</li>
-                <li class="visitor-explain-02__text">
-                  頭痛、強いだるさや息苦しさがある
-                </li>
-                <li class="visitor-explain-02__text">
-                  風邪のような症状がある（咳、鼻水、喉の痛み等）
-                </li>
-                <li class="visitor-explain-02__text">
-                  味覚・臭覚に異常を感じる
-                </li>
-                <li class="visitor-explain-02__text">
-                  過去14日以内に家族等の同居人が新型コロナウイルスに罹患した（疑う症状がある）
-                </li>
-                <li class="visitor-explain-02__text">
-                  過去14日以内に罹患者、罹患した疑いのある者との濃厚接触がある
-                </li>
-                <li class="visitor-explain-02__text">
-                  過去14日以内の渡航歴（流行地域）がある
-                </li>
-                <li class="visitor-explain-02__text">
-                  上記7項目の症状、事象が過去14日以内にある
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="visitor-contents__bottom">
-        <div class="visitor-colm">
-          <div class="visitor-explain-ex">
-            <div class="visitor-explain-ex__text-block">
-              <p class="visitor-explain-ex__text">会場内は禁煙です。</p>
-              <p class="visitor-explain-ex__text">
-                展示室内では飲食禁止です。飲食される場合は休憩スペースをご利用ください。
-              </p>
-              <p class="visitor-explain-ex__text">
-                写真撮影やビデオ撮影は各作品のキャプションをご確認ください。
-              </p>
-              <p class="visitor-explain-ex__text">
-                基本的に作品の接触は禁止です。可能な作品はキャプションをご確認ください。
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="visitor-colm">
-          <div class="visitor-explain-img">
-            <div class="visitor-explain-img__colm">
-              <img
-                class="visitor-explain-img__title"
-                src="assets/img/caution-visitor_image-title-01.svg"
-                alt="来場時"
-              />
-              <div class="visitor-explain-img__pict">
-                <div class="visitor-explain-img__contents">
-                  <img
-                    class="visitor-explain-img__icon"
-                    src="assets/img/caution-staff_pict-02.gif"
-                    alt="検温"
-                  />
-                  <p class="visitor-explain-img__caption">マスクの着用</p>
-                </div>
-                <div class="visitor-explain-img__contents">
-                  <img
-                    class="visitor-explain-img__icon"
-                    src="assets/img/caution-visitor_pict-05.gif"
-                    alt="手先の消毒"
-                  />
-                  <p class="visitor-explain-img__caption">手先の消毒</p>
-                </div>
-              </div>
-            </div>
-            <div class="visitor-explain-img__colm">
-              <img
-                class="visitor-explain-img__title"
-                src="assets/img/caution-visitor_image-title-02.svg"
-                alt="鑑賞中"
-              />
-              <div class="visitor-explain-img__pict-bottom">
-                <!-- <div class="visitor-explain-img__contents-bottom">
-        <img
-          class="visitor-explain-img__icon-bottom"
-          src="assets/img/caution-staff_pict-02.gif"
-          alt="マスクの着用"
-        />
-        <p class="visitor-explain-img__caption">マスクの着用</p>
-      </div> -->
-                <div class="visitor-explain-img__contents-bottom">
-                  <img
-                    class="visitor-explain-img__icon-bottom"
-                    src="assets/img/caution-visitor_pict-06.gif"
-                    alt="距離の確保"
-                  />
-                  <p class="visitor-explain-img__caption">距離の確保</p>
-                </div>
-                <div class="visitor-explain-img__contents-bottom">
-                  <img
-                    class="visitor-explain-img__icon-bottom"
-                    src="assets/img/caution-visitor_pict-07.gif"
-                    alt="お静かに"
-                  />
-                  <p class="visitor-explain-img__caption">お静かに</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <img src="assets/img/hurt-red.svg" alt="ハート" class="footer__hurt-02" />
-      <div class="footer-left">
-        <img
-          src="assets/img/footer_text.svg"
-          class="footer-left__title"
-          alt="多摩美術大学 統合デザインの卒展"
-        />
-        <div class="footer-left__reserve">
-          <div class="footer-left__link">
-            <img
-              src="assets/img/top-access_reserve.svg"
-              alt=" ̶来̶場̶予̶約̶は̶こ̶ち̶ら̶か̶ら̶  予約不要"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="footer-right">
-        <div class="footer-right__contents">
-          <ul>
-            <li>
-              <a href="./index.html">
-                <img src="assets/img/common/footer-top.svg" alt="トップ" />
-              </a>
-            </li>
-            <li>
-              <a href="./archive.html">
-                <img
-                  src="assets/img/common/footer-archive.svg"
-                  alt="アーカイブ"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="./news.html">
-                <img src="assets/img/common/footer-news.svg" alt="ニュース" />
-              </a>
-            </li>
-            <li>
-              <a href="./caution.html">
-                <img
-                  src="assets/img/common/footer-caution.svg"
-                  alt="来場時の注意事項"
-                />
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a
-                href="https://twitter.com/integrated_gw?s=20&t=M5hsY8ptON_Kqor3cQ3EaQ"
-                target="_blank"
-              >
-                <img src="assets/img/common/footer-twitter.svg" alt="Twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="https://note.com/900000/" target="_blank">
-                <img src="assets/img/common/footer-note.svg" alt="note" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/integrated_gw/"
-                target="_blank"
-              >
-                <img
-                  src="assets/img/common/footer-instagram.svg"
-                  alt="Instagram"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p class="footer-right__copy">
-          ©︎ 2023 多摩美術大学統合デザイン学科 卒業・修了制作展委員会
-        </p>
-      </div>
-    </footer>
-    <script src="./assets/script/script.js"></script>
-    <!-- <script src="./assets/script/scroll.js"></script>
+      </li>
+    </ul>
+  </div>
+  <p class="footer-right__copy">
+    ©︎ 2023 多摩美術大学統合デザイン学科 卒業・修了制作展委員会
+  </p>
+</div>
+</footer>
+<script src="./assets/script/script.js"></script>
+<!-- <script src="./assets/script/scroll.js"></script>
 <script
   type="module"
   src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"
   defer
 ></script> -->
-    <!-- <script src="./assets/script/three_script.js"></script> -->
+<!-- <script src="./assets/script/three_script.js"></script> -->
   </body>
 </html>

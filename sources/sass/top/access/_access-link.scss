@@ -4,7 +4,9 @@
 .access-link {
   display: flex;
   justify-content: space-between;
-  margin-top: $m-16;
+
+  // margin-top: $m-16;
+  margin: 0;
   @include mq(tb) {
     align-items: flex-end;
     flex-direction: column;

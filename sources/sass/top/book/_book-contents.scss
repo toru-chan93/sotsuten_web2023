@@ -15,7 +15,7 @@
     height: 71vw;
     margin-left: get-vw(-31px, 390px);
     margin-right: get-vw(-31px, 390px);
-    margin-top: $m-48;
+    margin-top: $m-24;
     width: 100vw;
     @include mq(tb) {
       height: 60vh;
@@ -72,7 +72,7 @@
   }
 
   &__canvas {
-    height: 100%;
+    height: 237px;
     width: 100%;
     @media screen and (max-width: 375px) {
       height: 35vh !important;

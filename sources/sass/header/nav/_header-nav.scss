@@ -55,14 +55,17 @@
   }
 
   &__time {
+    display: none;
     height: 25px;
     padding-bottom: 4px;
   }
 
   &__reserve {
+    display: none;
     margin: 0;
 
     img {
+      display: none;
       height: 38px;
     }
   }

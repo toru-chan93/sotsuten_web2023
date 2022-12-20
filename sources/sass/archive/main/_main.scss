@@ -37,7 +37,7 @@
   }
 
   &__text {
-    padding-top: $m-48;
+    padding-top: $m-32;
     width: 100%;
     @include text-style-body_white;
     @include mq(tb) {
@@ -51,7 +51,7 @@
   }
 
   &__hurt {
-    margin-top: 58px;
+    margin-top: 8px;
     width: calc(108% - 36px);
     @include mq(tb) {
       margin-top: -32px;
