@@ -6,6 +6,7 @@
   @include content-width;
 
   @include mq(tb) {
+    filter: saturate(2);
     margin-bottom: $m-96;
     margin-top: $m-96;
   }

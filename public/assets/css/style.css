@@ -294,6 +294,16 @@ a :hover {
     padding-right: 10.234375vw;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
+    height: auto;
+  }
+}
 .footer__hurt {
   bottom: -340vh;
   display: none;
@@ -307,14 +317,6 @@ a :hover {
     -webkit-filter: saturate(2);
             filter: saturate(2);
     left: 36px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: auto;
   }
 }
 .footer__hurt-02 {
@@ -1466,7 +1468,15 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .year-contents__title {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
     width: 2.96875vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .year-contents__2023 {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
   }
 }
 .year-contents__img {
@@ -1656,6 +1666,8 @@ a :hover {
     font-weight: 500;
     letter-spacing: 0.05rem;
     line-height: 1.6;
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
     padding-bottom: 24px;
     width: 22.890625vw;
   }
@@ -1675,6 +1687,12 @@ a :hover {
   font-weight: normal;
   letter-spacing: 0.08rem;
   line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .note-contents__time {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
+  }
 }
 .note-contents__read {
   -webkit-box-align: center;
@@ -1707,6 +1725,8 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .caution-main {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
     height: auto;
   }
 }
@@ -1811,6 +1831,8 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .staff {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
     margin-top: 96px;
   }
 }
@@ -1950,6 +1972,8 @@ a :hover {
 }
 @media screen and (min-width: 768px) {
   .visitor {
+    -webkit-filter: saturate(2);
+            filter: saturate(2);
     margin-bottom: 96px;
     margin-top: 96px;
   }

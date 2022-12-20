@@ -32,6 +32,7 @@
     @include mq(tb) {
       @include text-style-page-title;
 
+      filter: saturate(2);
       padding-bottom: $m-24;
       width: get-vw(293px, 1280px);
     }
@@ -43,6 +44,9 @@
   &__time {
     margin: 0;
     @include text-style-info;
+    @include mq(tb) {
+      filter: saturate(2);
+    }
   }
 
   &__read {

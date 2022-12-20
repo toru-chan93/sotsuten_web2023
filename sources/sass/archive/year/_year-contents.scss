@@ -27,7 +27,14 @@
   &__title {
     width: get-vw(38px, 390px);
     @include mq(tb) {
+      filter: saturate(2);
       width: get-vw(38px, 1280px);
+    }
+  }
+
+  &__2023 {
+    @include mq(tb) {
+      filter: saturate(2);
     }
   }
 

@@ -6,6 +6,12 @@
   width: 100%;
   @include content-width;
 
+  @include mq(tb) {
+    display: flex;
+    filter: saturate(2);
+    height: auto;
+  }
+
   &__hurt {
     bottom: -340vh;
     display: none;
@@ -17,11 +23,6 @@
       filter: saturate(2);
       left: 36px;
     }
-  }
-
-  @include mq(tb) {
-    display: flex;
-    height: auto;
   }
 
   &__hurt-02 {
