@@ -5,6 +5,7 @@
   @include content-width;
   @include mq(tb) {
     flex-direction: row;
+    height: 100vh;
     justify-content: center;
   }
 

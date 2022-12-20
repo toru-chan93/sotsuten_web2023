@@ -9,6 +9,7 @@
 
   @include mq(tb) {
     flex-direction: row;
+    height: 100vh;
   }
 
   &__hurt {
