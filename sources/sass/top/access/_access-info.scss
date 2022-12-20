@@ -22,7 +22,7 @@
     }
 
     img {
-      width: 32px;
+      width: 26px;
       @media screen and (max-width: 375px) {
         width: 28px;
       }
@@ -57,11 +57,12 @@
 
       li {
         @include text-style-body_red-02;
+
+        font-size: 14px;
+        padding-left: 16px;
         @media screen and (max-width: 375px) {
           font-size: 14px;
         }
-
-        padding-left: 16px;
       }
     }
   }
@@ -83,13 +84,14 @@
   &__description {
     p {
       @include text-style-body_red;
+
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: $m-16;
       @media screen and (max-width: 375px) {
         font-size: 14px;
         margin-top: 10px;
       }
-
-      margin-bottom: 0;
-      margin-top: $m-16;
     }
   }
 

@@ -559,7 +559,7 @@ a :hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 7.6923076923vw;
-  padding-top: 404px;
+  padding-top: 374px;
 }
 @media screen and (min-width: 768px) {
   .main__reserve {
@@ -781,7 +781,6 @@ a :hover {
   display: flex;
 }
 .description-text p {
-  margin: 0;
   color: #fff;
   font-family: mono45-headline, a-otf-midashi-go-mb31-pr6n, a-otf-futo-go-b101-pr6n, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   -webkit-font-feature-settings: "palt";
@@ -790,6 +789,8 @@ a :hover {
   font-weight: 500;
   letter-spacing: 0.08rem;
   line-height: 1.8;
+  font-size: 14px;
+  margin: 0;
 }
 @media screen and (max-width: 375px) {
   .description-text p {
@@ -924,7 +925,7 @@ a :hover {
   }
 }
 .access-info__sp img {
-  width: 32px;
+  width: 26px;
 }
 @media screen and (max-width: 375px) {
   .access-info__sp img {
@@ -985,6 +986,7 @@ a :hover {
   font-weight: 500;
   letter-spacing: 0.08rem;
   line-height: 1.6;
+  font-size: 14px;
   padding-left: 16px;
 }
 @media screen and (max-width: 375px) {
@@ -1017,6 +1019,7 @@ a :hover {
   font-weight: 500;
   letter-spacing: 0.08rem;
   line-height: 1.8;
+  font-size: 14px;
   margin-bottom: 0;
   margin-top: 16px;
 }
@@ -1285,6 +1288,7 @@ a :hover {
   font-weight: 500;
   letter-spacing: 0.08rem;
   line-height: 1.8;
+  font-size: 14px;
   margin: 0;
 }
 @media screen and (min-width: 768px) {
