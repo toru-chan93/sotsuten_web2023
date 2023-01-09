@@ -15,7 +15,6 @@
   p {
     @include text-style-body_white;
 
-    font-size: 14px;
     margin: 0;
     @include mq(tb) {
       column-gap: $m-24;
@@ -25,6 +24,9 @@
     @media screen and (max-width: 375px) {
       font-size: 14px;
       margin-top: 16px;
+    }
+    @media screen and (max-height: 700px) {
+      font-size: 14px;
     }
   }
 }

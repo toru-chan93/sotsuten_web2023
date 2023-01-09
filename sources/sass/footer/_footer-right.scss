@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: $m-48;
-  padding-top: $m-24;
+  padding-top: $m-48;
   @include mq(tb) {
     padding-bottom: $m-32;
     padding-top: 42px;
@@ -22,7 +22,7 @@
 
     @include mq(tb) {
       margin: 0;
-      padding-top: $m-16;
+      padding-top: $m-24;
     }
     @media screen and (max-width: 375px) {
       margin-top: 24px;

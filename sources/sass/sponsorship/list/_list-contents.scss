@@ -1,0 +1,63 @@
+@use "../../config/import" as *;
+@use "sass:math";
+
+.list-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__unit {
+    padding-bottom: $m-32;
+    text-decoration: none;
+    width: get-vw(152px, 390px);
+    @include mq(tb) {
+      padding-bottom: $m-48;
+      width: get-vw(293px, 1280px);
+    }
+  }
+
+  &__img {
+    border: solid 1px #8b8b8b;
+
+    // padding-bottom: 12px;
+    width: get-vw(152px, 390px);
+    @include mq(tb) {
+      width: get-vw(293px, 1280px);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding-bottom: $m-16;
+    width: get-vw(152px, 390px);
+    @include text-style-body_red-sp;
+    @include mq(tb) {
+      @include text-style-page-title;
+
+      filter: saturate(2);
+      padding-bottom: $m-24;
+      width: get-vw(293px, 1280px);
+    }
+    @media screen and (max-width: 375px) {
+      line-height: 1.4;
+    }
+  }
+
+  &__time {
+    margin: 0;
+    @include text-style-info;
+    @include mq(tb) {
+      filter: saturate(2);
+    }
+  }
+
+  &__read {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 28px;
+    }
+  }
+}

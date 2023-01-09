@@ -1,8 +1,7 @@
 @use "../../config/import" as *;
 @use "sass:math";
 
-.note {
-  margin-top: $m-80;
+.list {
   @include content-width;
   @include mq(tb) {
     margin-bottom: $m-72;
