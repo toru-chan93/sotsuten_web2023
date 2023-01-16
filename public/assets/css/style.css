@@ -1336,7 +1336,7 @@ a :hover {
 }
 
 .book-contents__reserve {
-  height: 44px;
+  height: 32px;
 }
 @media screen and (max-width: 375px) {
   .book-contents__reserve {
