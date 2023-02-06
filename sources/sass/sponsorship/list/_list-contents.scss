@@ -10,7 +10,6 @@
     padding-bottom: $m-32;
     text-decoration: none;
     width: get-vw(152px, 390px);
-    z-index: 1000;
     @include mq(tb) {
       padding-bottom: $m-48;
       width: get-vw(293px, 1280px);
